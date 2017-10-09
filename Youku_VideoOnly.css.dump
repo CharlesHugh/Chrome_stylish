@@ -1,5 +1,5 @@
-/*该域上的网址：v.youku.com*
-作者w:水月先森*/
+/*璇ュ煙涓婄殑缃戝潃锛歷.youku.com*
+浣滆�厀:姘存湀鍏堟．*/
 
 .g-header {
     display: none;
@@ -9,7 +9,7 @@
     width: 100%;
     background-color: #FFf;
     }
-/*视频上部*/
+/*瑙嗛涓婇儴*/
 
 .base {
     position: fixed;
@@ -17,14 +17,14 @@
     left: 0px;
     width: 100%
     
-/*视频名称*/
+/*瑙嗛鍚嶇О*/
 
 .base_info {
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
     }
-/*视频名称-居中*/
+/*瑙嗛鍚嶇О-灞呬腑*/
 
 .play_area,
 #movie_player,
@@ -36,12 +36,12 @@
     width: 100%;
     z-index: 10000;
     }
-/*视频播放区域*/
+/*瑙嗛鎾斁鍖哄煙*/
 
 .vpactionv5_iframe_wrap {
     display: none;
     }
-/*视频播放区域--分享*/
+/*瑙嗛鎾斁鍖哄煙--鍒嗕韩*/
 
 .sideCol,
 .mainCol,
@@ -50,4 +50,4 @@
 .right-sideBar {
     display: none;
     }
-/*视频下部*/
+/*瑙嗛涓嬮儴*/
