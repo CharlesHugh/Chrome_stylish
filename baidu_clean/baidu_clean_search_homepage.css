@@ -1,35 +1,23 @@
 /*百度搜索首页
 ^https?://www.baidu.com/
-2017.10.15
+2017.10.19
 水月仙森
 chiangchinming@gmail.com
 */
 
-/*屏蔽不用按钮*/
-#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top,
-#u_sp.s-isindex-wrap.s-sp-menu a[href="http://www.hao123.com"],
-#bottom_container.s-bottom-ctner {
+/*****顶部*****/
+
+/*顶栏:背景透明*/
+#s_top_wrap.s-top-wrap {
 	display: none;
 }
 
-a.s_bri {
-	display: none !important;
+#s_upfunc_menus,
+#u_sp {
+	background: transparent !important;
 }
 
-/*屏蔽搜索框右侧"语音、照相、百度一下"三个按钮*/
-#s_btn_wr.btn_wr.s_btn_wr.bg,
-span.soutu-btn,
-span.ipt_rec {
-	display: none !important;
-}
-
-form#form.fm {
-	text-align: center;
-	width: 100%;  /*修正搜索框,居中对齐*/
-}
-
-/*顶部隐藏,悬浮显示*/
-#s_top_wrap.s-top-wrap,
+/*顶栏隐藏,悬浮显示*/
 #s_upfunc_menus.s-upfunc-menus,
 #u_sp.s-isindex-wrap.s-sp-menu {
 	background: #333;
@@ -39,4 +27,59 @@ form#form.fm {
 #s_upfunc_menus.s-upfunc-menus:hover,
 #u_sp.s-isindex-wrap.s-sp-menu:hover {
 	opacity: 1;
+}
+
+/*顶栏-左侧:消息*/
+#s_icons a.s-msg,
+
+/*顶栏-右侧:hao123,新闻,地图,视频,贴吧,学术*/
+a[href="http://www.hao123.com"],
+a[href="http://news.baidu.com"],
+a[href="http://map.baidu.com"],
+a[href="http://v.baidu.com"],
+a[href="http://tieba.baidu.com"],
+a[href="http://xueshu.baidu.com"],
+
+/**/
+#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top {
+	display: none;
+}
+
+/*搜索框右侧:语音、照相、百度一下*/
+span.ipt_rec,
+span.soutu-btn,
+#s_btn_wr.btn_wr.s_btn_wr.bg {
+	display: none !important;
+}
+
+/*****正文:百度logo,搜索框*****/
+
+/*正文-位置调整*/
+#head_wrapper {
+	width: 100%;
+	padding: 0 !important;
+	margin: auto 0;
+	height: 50%;
+}
+
+/*正文-2.搜索框:居中对齐*/
+form#form.fm {
+	text-align: center;
+	width: 100%;
+}
+
+/*****底部*****/
+/*版权信息*/
+#bottom_container.s-bottom-ctner {
+	display: none;
+}
+
+a.s_bri {
+	display: none !important;
+}
+
+/*****其它*****/
+
+/*屏蔽滚轮*/::-webkit-scrollbar {
+	display: none;
 }
