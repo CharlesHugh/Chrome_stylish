@@ -1,0 +1,103 @@
+/*
+知乎-主页
+https?://www.zhihu.com/
+2017.10.19
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*第一行:搜索框(居中,鼠标划过显示)*/
+header.Sticky.AppHeader.is-fixed {
+	margin: 0;
+	padding: 0;/*居中*/
+
+	/*height: 59px;高度调整*/
+	position: absolute;/*顶栏搜索框固定*/
+	opacity: 1;
+	transition-delay: 2s;
+	transition-duration: .5s;
+	z-index: 10;
+	border-bottom: 0px;
+	box-shadow: 0px 0px 3px #BBB;
+}
+
+header.Sticky.AppHeader.is-fixed:hover {
+	opacity: 1;
+}
+
+/*搜索框下面的内容上移*/
+
+/*
+.App-main {
+position: relative;	
+top: -64px;
+}
+*/
+
+/*****正文:提问回答写文章,各种动态******/
+
+/*全文背景颜色*/
+body {
+	background-color: #FFFFFF !important;
+}
+
+/*正文-处理:边框阴影,拉伸居中,内外边距,圆角*/
+.TopstoryMain {
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px 1px 30px #BBB !important;/*增加阴影*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;	/*圆角*/
+	width: 100% !important;
+	margin: 5px auto 10px 0 !important;
+	padding: 20px;/*调整内外边距,拉伸居中*/
+	background-color: #FFFFFF !important;/*背景*/
+}
+
+/*****正文1:提问回答写文章*****/
+.Card.TopstoryHeader {
+	display: none;
+}
+
+/*****正文2:各种动态*****/
+
+/*****正文右部:相关问题、live推荐*****/
+.TopstorySideBar {
+	display: none
+}
+
+/*长答案底部悬浮:评论分享收藏感谢;收起*/
+.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom {
+	width: inherit;
+	opacity: 0;
+}
+
+.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom:hover {
+	width: inherit;
+	opacity: 1;
+}
+
+/*****其它*****/
+
+/*底部右方悬浮:建议反馈*/
+.CornerButtons,
+
+/*广告插件提示*/
+.AdblockBanner {
+	display: none;
+}
+
+.Card.TopstoryItem.TopstoryItem--experimentExpand.TopstoryItem--experimentButton>div:nth-child(2) .Advert {
+	display: none !important;
+}
+
+/*富文本处理(???)
+.ContentItem-actions.RichContent-actions,
+.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom {
+display: none !important;
+}
+*/
+.Sticky--holder,
+.ContentItem-actions.Sticky.RichContent-actions.is-bottom {
+	width: inherit !important;
+}

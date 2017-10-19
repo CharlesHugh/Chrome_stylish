@@ -1,0 +1,34 @@
+/*
+爱奇艺-搜索-首页
+^https?//so.iqiyi.com/
+2017.10.18
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶栏隐藏*/
+#block-pcltdown_15031601 {
+	opacity: 1;
+}
+
+#block-pcltdown_15031601:hover {
+	opacity: 1;
+}
+
+/*顶栏各种*/
+.part_left,
+.topNav_vip,
+.topNav_update,
+#data-widget-parent,
+#wnav-appdown {
+	display: none;
+}
+
+.topNav_user.usrTx-box {
+	float: right;
+}
+
+/*底部各种*/
+#block-Z {
+	display: none
+}

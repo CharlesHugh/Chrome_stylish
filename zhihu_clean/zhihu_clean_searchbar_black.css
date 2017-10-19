@@ -1,0 +1,62 @@
+/*****黑色背景-开始*****/
+
+/***黑色背景-1.搜索框***/
+
+/*搜索框-背景*/
+.zu-top {
+  background-image: none;
+  border-bottom: none;
+  background-color: #34495e;
+}
+
+/*搜索框-输入框*/
+.zu-top-search-input {
+  color: #536a81;
+  background: #293a4a;
+  border:none;
+}
+
+/*搜索框-搜索按钮*/
+.zu-top-search-button,
+
+/*搜索框-话题*/
+#zh-top-nav-topic,
+
+/*搜索框-发现*/
+#zh-top-nav-explore {
+  background-image: none !important;
+  background: none;
+  border: none !important;
+  box-shadow: none!important;
+}
+
+/*搜索框-提问按钮*/
+.zu-top-add-question {
+  background-image: none !important;
+  border-radius: 3px;
+  border: 1px solid #4e6d8d;
+  box-shadow: none !important;
+  opacity: .9;
+  -ms-filter: "alpha(Opacity=90)";
+  line-height: 0px;
+}
+
+/*搜索框-个人头像悬浮*/
+.zu-top-nav-userinfo,
+.top-nav-profile a {
+  background: #34495E !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.top-nav-profile a:hover {
+  background: #293a4a !important;
+}
+
+/***黑色背景-2.正文部分***/
+.topics-plaza a:nth-child(1),/*进入话题广场(~/topic#??)*/
+.zm-topic-cat-item.current a,.zm-topic-cat-item:hover a/*已关注的话题动态(~/topic#??)*/ {
+  background: #34495E !important;
+}
+
+/*****黑色背景-结束*****/

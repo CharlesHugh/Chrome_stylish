@@ -1,0 +1,23 @@
+/*
+芒果TV-播放页面
+^https?://www.mgtv.com/v/.*
+^https?://www.mgtv.com/b/.*
+2017.10.18
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*悬浮搜索框*/
+body {
+	padding: 0px;
+}
+
+.c-header.c-header-lv2 {
+	position: static;
+	z-index: 0;
+	width: 100%;
+}
+
+/*右侧悬浮*/
+
+{display: none;}

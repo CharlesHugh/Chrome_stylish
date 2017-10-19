@@ -1,0 +1,42 @@
+/*百度搜索首页
+^https?://www.baidu.com/
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*屏蔽不用按钮*/
+#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top,
+#u_sp.s-isindex-wrap.s-sp-menu a[href="http://www.hao123.com"],
+#bottom_container.s-bottom-ctner {
+	display: none;
+}
+
+a.s_bri {
+	display: none !important;
+}
+
+/*屏蔽搜索框右侧"语音、照相、百度一下"三个按钮*/
+#s_btn_wr.btn_wr.s_btn_wr.bg,
+span.soutu-btn,
+span.ipt_rec {
+	display: none !important;
+}
+
+form#form.fm {
+	text-align: center;
+	width: 100%;  /*修正搜索框,居中对齐*/
+}
+
+/*顶部隐藏,悬浮显示*/
+#s_top_wrap.s-top-wrap,
+#s_upfunc_menus.s-upfunc-menus,
+#u_sp.s-isindex-wrap.s-sp-menu {
+	background: #333;
+	opacity: 0;
+}
+
+#s_upfunc_menus.s-upfunc-menus:hover,
+#u_sp.s-isindex-wrap.s-sp-menu:hover {
+	opacity: 1;
+}

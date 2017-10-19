@@ -1,12 +1,14 @@
 /*
-知乎-回答页
-https?://www.zhihu.com/question/.*
-2017.10.19
+名称:
+网站:
+2017.10.16
 水月仙森
 chiangchinming@gmail.com
 */
 
-/*顶部悬浮*/
+/*****顶部*****/
+
+/*悬浮搜索框*/
 header[class="Sticky AppHeader is-fixed is-hidden"] {
     display: none !important;
 }
@@ -51,26 +53,20 @@ h1.QuestionHeader-title {
     margin: 0;
 }
 
-/*标题左上:标题标签*/
+/*标题左上:*/
 .QuestionHeader-tags,
 
-/*标题下方:标题内容*/
+/*标题下方:*/
 .QuestionHeader-detail,
 
-/*标题下方:评论分享*/
+/*标题下方:*/
 .QuestionHeader-footer,
 
-/*标题右方:问题关注*/
-.QuestionHeader-side {
-    display: none;
-}
+/*标题右方:*/
 
-/*****正文:话题下所有答案******/
+/*****正文:******/
 
-/*正文上方-邀请回答*/
-.Card.QuestionInvitation {
-    display: none;
-}
+/*正文上方-*/
 
 /*全文背景颜色*/
 body {
@@ -90,7 +86,6 @@ body {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
 }
-
 /*正文-内容居中*/
 .Question-mainColumn,
 .Layout-main {
@@ -101,39 +96,19 @@ body {
 }
 
 /*正文最下方:回答*/
-.Card.QuestionAnswers-answerAdd {
-    margin: 0 !important;
-    position: relative;
-    bottom: 0px;
-    z-index: 10;
-    opacity: 0;
-}
 
-.Card.QuestionAnswers-answerAdd:hover {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: translate(0, -10px);
-}
 
-/*
-.Card.QuestionAnswers-answerAdd,
-.AnswerAdd,
+/*****正文右部:*****/
 
-*/
 
-/*****正文右部:相关问题、live推荐*****/
-.Question-sideColumn,
+/*****底部各种*****/
 
-/*长答案底部悬浮:评论分享收藏感谢;
-.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom,
-*/
 
 /*****其它*****/
 
+
 /*底部右方悬浮:建议反馈*/
-.CornerButtons,
+
 
 /*广告插件提示*/
-.AdblockBanner {
-    display: none;
-}
+

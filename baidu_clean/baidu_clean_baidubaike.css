@@ -1,0 +1,91 @@
+/*
+百度百科
+baike.baidu.com
+2017.10.16
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部*/
+a.help,
+div.sug,
+li.extra,
+button#search,
+button#searchLemma,
+.topbar.cmn-clearfix {
+	display: none;
+}
+
+.form input#query {
+	border-width: 1px;
+	border-right: 1px solid #b8b8b8;
+}
+
+/*声明*/
+div#J-declare-wrap.declare-wrap {
+	display: none !important;
+}
+
+/*导航栏*/
+.navbar-wrapper {
+	display: none;
+}
+
+/*顶部搜索框悬浮*/
+.lemmaWgt-searchHeader {
+	display: none !important;
+}
+
+/*右侧分享悬浮*/
+#side-share {
+	display: none;
+}
+
+/*百科内容*/
+
+/*顶端*/
+.top-tool,
+.edit-lemma.cmn-btn-hover-blue.cmn-btn-28.j-edit-link,
+.edit-prompt {
+	display: none !important;
+}
+
+/*正文调整:居中*/
+.main-content.__reader_view_article_wrap_23642937399923047__ {
+	margin-left: 10%;
+}
+
+/*右端*/
+.side-content {
+	display: none !important;
+}
+
+/*词条内容"修改"*/
+.edit-icon.j-edit-link {
+	display: none !important;
+}
+
+/*底部参考及脚注*/
+.para sup,
+.lemma-reference.collapse.nslog-area.log-set-param {
+	display: none;
+}
+
+/*底部其它*/
+.after-content,
+.wgt-footer-main {
+	display: none;
+}
+
+/* 内容调节 */
+.body-wrapper .content-wrapper {
+	margin: 20px 0 30px;
+}
+
+.content,
+.polysemant-list {
+	border-radius: 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+}

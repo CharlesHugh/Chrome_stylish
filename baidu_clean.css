@@ -1,0 +1,492 @@
+@-moz-document regexp("^https?://(tieba.baidu.com|www.tieba.com)/+home/+.*$") {
+/*百度个人主页
+^https?://(tieba.baidu.com|www.tieba.com)/+home/+.*$
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部*/
+.search_nav.j_search_nav,
+.userbar,
+.suggestion_list {
+  display: none;
+}
+
+
+/*用户*/
+.userinfo_right {
+  display: none;
+}
+
+/*右侧*/
+.right_aside {
+  display: none;
+}
+
+/*底侧*/
+.footer {
+  display: none;
+}
+
+/*背景*/
+.headinfo_wrap,
+.btn_editbg
+{
+  display: none;
+}
+
+/*头像1*/
+.btn_grounps
+{
+  display:none;
+}
+.userinfo_wrap 
+{
+  min-height: 160px;
+  border:none;
+}
+.userinfo_middle,
+.userinfo_left
+{
+  height: 160px;
+}
+.userinfo_left
+{
+  width: 180px;
+  height: 160px;
+}
+
+.userinfo_left_head
+{
+  position:static;
+}
+
+
+
+
+/*背景同色*/
+.userinfo_wrap.clearfix
+.wrap2,
+.left_aside.ihome_left_aside,
+.content_wrap
+{
+  background:#fff
+  
+}
+
+/*整体居中*/
+/*用户信息框,爱逛的吧及热门动态框*/
+
+.userinfo_left 
+{
+  margin-left:10%;
+}
+
+.content_wrap
+{
+  width:80%;
+  margin:0 auto; 
+}
+
+
+/*爱逛的吧、热门动态*/
+.ihome_nav_wrap,
+.ihome_forum_group.ihome_section.clearfix,
+.ihome_hot_feed.ihome_section
+{
+  margin:8px auto;
+  background:#FdFdFd
+}
+
+/*其它*/
+#p180-root
+{
+  display:none;
+}
+}
+
+@-moz-document regexp("^https?://(tieba.baidu.com|www.tieba.com)((/+f\\?.*)|(/[0-9a-zA-Z_\\%]+([\\?#]+.*)*))$") {
+/*百度贴吧首页
+^https?://(tieba.baidu.com|www.tieba.com)((/+f\?.*)|(/[0-9a-zA-Z_\%]+([\?#]+.*)*))$
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*底侧:*/
+div[id="pagelet_frs-list/pagelet/thread_footer"] {
+  display: none;
+}
+
+.foot {
+  display: none;
+}
+
+/*顶部搜索框*/
+.search_nav.j_search_nav,
+.userbar {
+  display: none;
+}
+
+.search_top.clearfix {
+  height: 0px;
+}
+
+#head.search_bright.clearfix {
+  height: 75px;
+}
+
+/*贴吧上方背景*/
+.card_banner.card_banner_link {
+  display: none;
+}
+
+/*贴吧头像*/
+.card_top_theme .card_head,
+.card_top_theme .card_head_img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  bottom: 0px;
+}
+
+.card_top.clearfix {
+  padding-left: 100px
+}
+
+/*首行悬浮搜索框*/
+.search_main_fixed,
+.suggestion {
+  display: none !important;
+}
+
+/*右侧悬浮*/
+.tbui_aside_float_bar,
+.tbui_aside_float_bar.tbui_afb_compact {
+  display: none;
+}
+
+/*去除边框,底部分隔线*/
+.forum_content {
+  background: #fff;     /*去除背景和底部分隔线*/
+}
+
+.wrap2 {
+  padding-bottom: 0px;
+}
+
+/*居中调整*/
+#content_wrap.main {
+  width: 100%;
+  margin: auto;
+}
+
+/*增加贴子内容简介宽度*/
+.threadlist_abs_onlyline {
+  width: 160% !important;
+}
+
+/*右侧:贴吧热议、其他*/
+#aside.aside {
+  display: none;
+}
+
+}
+
+@-moz-document regexp("^https?://www.baidu.com/") {
+/*百度搜索首页
+^https?://www.baidu.com/
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*屏蔽不用按钮*/
+#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top,
+#u_sp.s-isindex-wrap.s-sp-menu a[href="http://www.hao123.com"],
+#bottom_container.s-bottom-ctner {
+	display: none;
+}
+
+a.s_bri {
+	display: none !important;
+}
+
+/*屏蔽搜索框右侧"语音、照相、百度一下"三个按钮*/
+#s_btn_wr.btn_wr.s_btn_wr.bg,
+span.soutu-btn,
+span.ipt_rec {
+	display: none !important;
+}
+
+form#form.fm {
+	text-align: center;
+	width: 100%;  /*修正搜索框,居中对齐*/
+}
+
+/*顶部隐藏,悬浮显示*/
+#s_top_wrap.s-top-wrap,
+#s_upfunc_menus.s-upfunc-menus,
+#u_sp.s-isindex-wrap.s-sp-menu {
+	background: #333;
+	opacity: 0;
+}
+
+#s_upfunc_menus.s-upfunc-menus:hover,
+#u_sp.s-isindex-wrap.s-sp-menu:hover {
+	opacity: 1;
+}
+}
+
+@-moz-document regexp("^https?://www.baidu.com/s.*") {
+/*
+百度搜索搜索页
+^https?://www.baidu.com/s.*
+2017.10.17
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*首行搜索框简化-左侧*/
+.bg.s_ipt_wr.quickdelete-wrap {
+	width: 50%
+}
+
+span.ipt_rec,
+span.soutu-btn {
+	display: none !important;
+}
+
+/*首行搜索框简化-右侧*/
+a.toindex {
+	display: none;
+}
+
+#u {
+	opacity: 0;
+}
+
+#u:hover {
+	opacity: 1;
+}
+
+/*****搜索界面*****/
+
+/*1.搜索结果-搜索工具*/
+.search_tool {
+	display: none;
+}
+
+/*界面居中*/
+.head_nums_cont_outer.OP_LOG,
+#content_left {
+	width: 100%;
+}
+
+#page,
+#content_left {
+	padding: 0;
+}
+
+#head .head_wrapper {
+	margin: 0 auto 0 30%;
+}
+
+.nums,
+#content_left .result-op.c-container,
+#content_left .result.c-container,
+#rs,
+#page {
+	margin-left: 20% !important;
+}
+
+/*搜索结果-网址*/
+.c-showurl,
+.c-span18.c-span-last .f13,
+
+/*搜索结果-内容*/
+.c-span24.c-span-last,
+.op-tieba-general-maintable,
+.c-abstract,
+.result.c-container {
+	width: 600px;
+}
+
+/*搜索结果-下划线*/
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+a em {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*搜索结果-图片*/
+.op-tieba-general-mainpic,
+a.st_com_abstract.c-span6,
+.general_image_pic.c-span6 {
+	display: none;
+}
+
+/*搜索结果-其它*/
+.c-table.op_pcsoft_table tbody tr th,
+.c-gap-top,
+.op_LAMP {
+	display: none;
+}
+
+.c-index-hot.c-index.c-gap-icon-right-small {
+	background-color: #8eb9f5;
+}
+
+.c-gap-right-small.op-se-listen-recommend {
+	color: #000;
+}
+
+/*tieba*/
+.op-tieba-general-right {
+	color: #000;
+}
+
+.op-tieba-general-lookmore.op-tieba-general-mainpl {
+	display: none;
+}
+
+/*****各种屏蔽*****/
+
+/*隐藏顶部悬浮搜索框*/
+#head {
+	position: static;
+}
+
+#head.s_down {
+	display: none !important;
+}
+
+/*顶部推荐*/
+.leftBlock {
+	display: none;
+}
+
+/*顶部分类:网页、新闻...*/
+.s_tab {
+	display: none;
+}
+
+/*右侧推荐*/
+#content_right {
+	display: none;
+}
+
+/*底部*/
+#page span.pc {
+	border: none;
+}
+
+#foot {
+	display: none;
+}
+
+/*网址悬浮*/
+.c-tip-con {
+	display: none !important;
+}
+
+}
+
+@-moz-document domain("baike.baidu.com") {
+/*
+百度百科
+baike.baidu.com
+2017.10.16
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部*/
+a.help,
+div.sug,
+li.extra,
+button#search,
+button#searchLemma,
+.topbar.cmn-clearfix {
+	display: none;
+}
+
+.form input#query {
+	border-width: 1px;
+	border-right: 1px solid #b8b8b8;
+}
+
+/*声明*/
+div#J-declare-wrap.declare-wrap {
+	display: none !important;
+}
+
+/*导航栏*/
+.navbar-wrapper {
+	display: none;
+}
+
+/*顶部搜索框悬浮*/
+.lemmaWgt-searchHeader {
+	display: none !important;
+}
+
+/*右侧分享悬浮*/
+#side-share {
+	display: none;
+}
+
+/*百科内容*/
+
+/*顶端*/
+.top-tool,
+.edit-lemma.cmn-btn-hover-blue.cmn-btn-28.j-edit-link,
+.edit-prompt {
+	display: none !important;
+}
+
+/*正文调整:居中*/
+.main-content.__reader_view_article_wrap_23642937399923047__ {
+	margin-left: 10%;
+}
+
+/*右端*/
+.side-content {
+	display: none !important;
+}
+
+/*词条内容"修改"*/
+.edit-icon.j-edit-link {
+	display: none !important;
+}
+
+/*底部参考及脚注*/
+.para sup,
+.lemma-reference.collapse.nslog-area.log-set-param {
+	display: none;
+}
+
+/*底部其它*/
+.after-content,
+.wgt-footer-main {
+	display: none;
+}
+
+/* 内容调节 */
+.body-wrapper .content-wrapper {
+	margin: 20px 0 30px;
+}
+
+.content,
+.polysemant-list {
+	border-radius: 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+}
+
+}

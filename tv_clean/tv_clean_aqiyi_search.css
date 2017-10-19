@@ -1,0 +1,39 @@
+/*
+爱奇艺-搜索结果页
+^https?//so.iqiyi.com/so/.*
+2017.10.18
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*悬浮搜索框*/
+.mod_search_header.search-onetree.search-fixed {
+	display: none;
+}
+
+/*右侧悬浮*/
+.baseScrollBar_menus {
+	display: none;
+}
+
+/*顶部各种*/
+.topNavWrap-pindao,
+.search_tips,
+.search_result_tip {
+	display: none;
+}
+
+/*右侧各种*/
+.search_result_side_bg.mt10.mb20,
+.search_result_download.mb10,
+.search_result_side_bg.mt10.mb20,
+.mt20,
+.mt20.hotWords-fixed {
+	display: none !important;
+}
+
+/*底部各种*/
+.mod-searchAbout,
+.qy_footer {
+	display: none;
+}

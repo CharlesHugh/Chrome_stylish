@@ -1,0 +1,84 @@
+/*百度贴吧首页
+^https?://(tieba.baidu.com|www.tieba.com)((/+f\?.*)|(/[0-9a-zA-Z_\%]+([\?#]+.*)*))$
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*底侧:*/
+div[id="pagelet_frs-list/pagelet/thread_footer"] {
+  display: none;
+}
+
+.foot {
+  display: none;
+}
+
+/*顶部搜索框*/
+.search_nav.j_search_nav,
+.userbar {
+  display: none;
+}
+
+.search_top.clearfix {
+  height: 0px;
+}
+
+#head.search_bright.clearfix {
+  height: 75px;
+}
+
+/*贴吧上方背景*/
+.card_banner.card_banner_link {
+  display: none;
+}
+
+/*贴吧头像*/
+.card_top_theme .card_head,
+.card_top_theme .card_head_img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  bottom: 0px;
+}
+
+.card_top.clearfix {
+  padding-left: 100px
+}
+
+/*首行悬浮搜索框*/
+.search_main_fixed,
+.suggestion {
+  display: none !important;
+}
+
+/*右侧悬浮*/
+.tbui_aside_float_bar,
+.tbui_aside_float_bar.tbui_afb_compact {
+  display: none;
+}
+
+/*去除边框,底部分隔线*/
+.forum_content {
+  background: #fff;     /*去除背景和底部分隔线*/
+}
+
+.wrap2 {
+  padding-bottom: 0px;
+}
+
+/*居中调整*/
+#content_wrap.main {
+  width: 100%;
+  margin: auto;
+}
+
+/*增加贴子内容简介宽度*/
+.threadlist_abs_onlyline {
+  width: 160% !important;
+}
+
+/*右侧:贴吧热议、其他*/
+#aside.aside {
+  display: none;
+}

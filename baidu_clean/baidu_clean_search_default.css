@@ -1,0 +1,153 @@
+/*
+百度搜索搜索页
+^https?://www.baidu.com/s.*
+2017.10.17
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*首行搜索框简化-左侧*/
+.bg.s_ipt_wr.quickdelete-wrap {
+	width: 50%
+}
+
+span.ipt_rec,
+span.soutu-btn {
+	display: none !important;
+}
+
+/*首行搜索框简化-右侧*/
+a.toindex {
+	display: none;
+}
+
+#u {
+	opacity: 0;
+}
+
+#u:hover {
+	opacity: 1;
+}
+
+/*****搜索界面*****/
+
+/*1.搜索结果-搜索工具*/
+.search_tool {
+	display: none;
+}
+
+/*界面居中*/
+.head_nums_cont_outer.OP_LOG,
+#content_left {
+	width: 100%;
+}
+
+#page,
+#content_left {
+	padding: 0;
+}
+
+#head .head_wrapper {
+	margin: 0 auto 0 30%;
+}
+
+.nums,
+#content_left .result-op.c-container,
+#content_left .result.c-container,
+#rs,
+#page {
+	margin-left: 20% !important;
+}
+
+/*搜索结果-网址*/
+.c-showurl,
+.c-span18.c-span-last .f13,
+
+/*搜索结果-内容*/
+.c-span24.c-span-last,
+.op-tieba-general-maintable,
+.c-abstract,
+.result.c-container {
+	width: 600px;
+}
+
+/*搜索结果-下划线*/
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+a em {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*搜索结果-图片*/
+.op-tieba-general-mainpic,
+a.st_com_abstract.c-span6,
+.general_image_pic.c-span6 {
+	display: none;
+}
+
+/*搜索结果-其它*/
+.c-table.op_pcsoft_table tbody tr th,
+.c-gap-top,
+.op_LAMP {
+	display: none;
+}
+
+.c-index-hot.c-index.c-gap-icon-right-small {
+	background-color: #8eb9f5;
+}
+
+.c-gap-right-small.op-se-listen-recommend {
+	color: #000;
+}
+
+/*tieba*/
+.op-tieba-general-right {
+	color: #000;
+}
+
+.op-tieba-general-lookmore.op-tieba-general-mainpl {
+	display: none;
+}
+
+/*****各种屏蔽*****/
+
+/*隐藏顶部悬浮搜索框*/
+#head {
+	position: static;
+}
+
+#head.s_down {
+	display: none !important;
+}
+
+/*顶部推荐*/
+.leftBlock {
+	display: none;
+}
+
+/*顶部分类:网页、新闻...*/
+.s_tab {
+	display: none;
+}
+
+/*右侧推荐*/
+#content_right {
+	display: none;
+}
+
+/*底部*/
+#page span.pc {
+	border: none;
+}
+
+#foot {
+	display: none;
+}
+
+/*网址悬浮*/
+.c-tip-con {
+	display: none !important;
+}

@@ -1,0 +1,105 @@
+/*百度个人主页
+^https?://(tieba.baidu.com|www.tieba.com)/+home/+.*$
+2017.10.15
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部*/
+.search_nav.j_search_nav,
+.userbar,
+.suggestion_list {
+  display: none;
+}
+
+
+/*用户*/
+.userinfo_right {
+  display: none;
+}
+
+/*右侧*/
+.right_aside {
+  display: none;
+}
+
+/*底侧*/
+.footer {
+  display: none;
+}
+
+/*背景*/
+.headinfo_wrap,
+.btn_editbg
+{
+  display: none;
+}
+
+/*头像1*/
+.btn_grounps
+{
+  display:none;
+}
+.userinfo_wrap 
+{
+  min-height: 160px;
+  border:none;
+}
+.userinfo_middle,
+.userinfo_left
+{
+  height: 160px;
+}
+.userinfo_left
+{
+  width: 180px;
+  height: 160px;
+}
+
+.userinfo_left_head
+{
+  position:static;
+}
+
+
+
+
+/*背景同色*/
+.userinfo_wrap.clearfix
+.wrap2,
+.left_aside.ihome_left_aside,
+.content_wrap
+{
+  background:#fff
+  
+}
+
+/*整体居中*/
+/*用户信息框,爱逛的吧及热门动态框*/
+
+.userinfo_left 
+{
+  margin-left:10%;
+}
+
+.content_wrap
+{
+  width:80%;
+  margin:0 auto; 
+}
+
+
+/*爱逛的吧、热门动态*/
+.ihome_nav_wrap,
+.ihome_forum_group.ihome_section.clearfix,
+.ihome_hot_feed.ihome_section
+{
+  margin:8px auto;
+  background:#FdFdFd
+}
+
+/*其它*/
+#p180-root
+{
+  display:none;
+}

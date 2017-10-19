@@ -1,0 +1,31 @@
+/*
+芒果tv首页
+^https?://www.mgtv.com/
+2017.10.17
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部各种*/
+.m-headgg {
+	display: none !important;
+}
+
+/*顶部悬浮搜索*/
+#honey-header.c-header-lv1.c-header-fix {
+	display: none;
+}
+
+/*左右悬浮*/
+.showbtn,
+.honey-feedback-floatbtn.clearfix {
+	display: none;
+}
+
+/*底部各种*/
+.wp-main.morebg,
+.wp-main.made-main.gg-main.lazy-loaded,
+.c-footer.c-footer-lv1,
+.c-footer.c-footer-lv2 {
+	display: none;
+}

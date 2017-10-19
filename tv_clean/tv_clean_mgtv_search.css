@@ -1,0 +1,132 @@
+/*
+芒果tv搜索
+^https?://so.mgtv.com/.*
+2017.10.17
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****搜索正文*****/
+
+/*结果排列方式:综合,筛选*/
+.search-title {
+	display: none;
+}
+
+.so-container {
+	padding-top: 60px;
+}
+
+.search-box.clearfix {
+	margin-left: 20%;
+}
+
+/*****顶部*****/
+.so-main.main1280.screen-xs .c-header-nav {
+	height: 60px !important;
+}
+
+.wp {
+	margin: 0 auto 0;
+}
+
+.c-header-lv1 {
+	z-index: 0;
+}
+
+/*****全局颜色*****/
+
+/*背景颜色
+灰色:#f9f9f9
+灰色2:#f4f4f4
+白:#fff
+黑:#000
+*/
+
+/*全局*/
+html {
+	background-color: #f9f9f9;
+}
+
+/*上*/
+.c-header-nav {
+	background-color: #f9f9f9;
+}
+
+/*中*/
+.so-container {
+	background-color: #fff;
+}
+
+/*左下*/
+.search-content {
+	background-color: #f9f9f9;
+}
+
+body.so-main.main1280.screen-xs {
+	background-color: #fff;
+}
+
+/**搜索结果**/
+.search-box.clearfix,
+.search-resultlist {
+	background-color: #f9f9f9;
+}
+
+/*搜索结果1*/
+.so-result-info.so-result-info-cc5a12e78ee69b48e6a823d6c9685c75,
+.result_ugc.result-content {
+	background-color: #fff !important;
+}
+
+/*搜索结果2*/
+.so-result-info.search-shortfilm.clearfix {
+	background-color: #fff;
+}
+
+/*
+搜索结果2-具体
+.result-content.clearfix
+{
+background-color:#f9f9f9;
+}
+*/
+
+/*翻页*/
+#paginator.w-pages.w-pages-default {
+	background-color: #f9f9f9;
+}
+
+/*****各种屏蔽*****/
+
+/*搜索框热词*/
+.hot-words,
+.hot-words #hwa-more {
+	display: none;
+}
+
+/*顶部悬浮搜索*/
+.so-main.screen-m.bodyfixed #honey-header {
+	display: none;
+}
+
+/*右悬浮*/
+.honey-feedback-floatbtn.clearfix {
+	display: none;
+}
+
+/*右侧各种*/
+.star-relative,
+.topboard {
+	display: none;
+}
+
+/*顶部各种*/
+.m-headgg {
+	display: none !important;
+}
+
+/*底部各种*/
+.c-footer.c-footer-lv2 {
+	display: none;
+}
