@@ -1,6 +1,6 @@
 /*百度搜索首页
-^https?://www.baidu.com/
-2017.10.19
+^https?://(www.)?baidu.com/[^/]*
+2017.10.22
 水月仙森
 chiangchinming@gmail.com
 */
@@ -40,21 +40,34 @@ a[href="http://v.baidu.com"],
 a[href="http://tieba.baidu.com"],
 a[href="http://xueshu.baidu.com"],
 
+/*顶栏-右侧:更多产品*/
+a.bri,
+
 /**/
 #s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top {
-	display: none;
+	display: none !important;
+}
+
+/*搜索框-输入框*/
+#kw.s_ipt {
+	float: left;
+	width: inherit;
 }
 
 /*搜索框右侧:语音、照相、百度一下*/
 span.ipt_rec,
-span.soutu-btn,
-#s_btn_wr.btn_wr.s_btn_wr.bg {
+span.soutu-btn
+
+/*搜索框右侧:百度一下*/
+
+/*.s_btn_wr*/ {
 	display: none !important;
 }
 
 /*****正文:百度logo,搜索框*****/
 
 /*正文-位置调整*/
+
 #head_wrapper {
 	width: 100%;
 	padding: 0 !important;
@@ -69,7 +82,12 @@ form#form.fm {
 }
 
 /*****底部*****/
+
+/*手机百度+二维码*/
+.qrcodeCon,
+
 /*版权信息*/
+#ftCon,
 #bottom_container.s-bottom-ctner {
 	display: none;
 }

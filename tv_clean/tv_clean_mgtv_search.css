@@ -1,7 +1,7 @@
 /*
-芒果tv搜索
+芒果tv搜索页面
 ^https?://so.mgtv.com/.*
-2017.10.17
+2017.10.21
 水月仙森
 chiangchinming@gmail.com
 */
@@ -106,8 +106,22 @@ background-color:#f9f9f9;
 }
 
 /*顶部悬浮搜索*/
+.so-main.screen-m,
+.so-main.screen-m.bodyfixed,
+.c-header-nav,
+#honey-header {
+	position: static;
+	background-color: #f9f9f9 !important;
+}
+
+.so-container {
+	padding-top: 0;
+}
+
+/*防止波动*/
+.so-main.screen-m #honey-header,
 .so-main.screen-m.bodyfixed #honey-header {
-	display: none;
+	height: 70px !important;
 }
 
 /*右悬浮*/

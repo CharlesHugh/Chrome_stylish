@@ -1,0 +1,93 @@
+/*
+tv_clean_youku_player.css
+优酷播放页面
+^https?://v.youku.com/v_show/.*
+2017.10.22
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****全文******/
+
+/*背景*/
+
+/*
+body {
+	background: #fff
+}
+*/
+
+.layout_121 {
+	padding-top: 0 !important;
+}
+
+/*****顶栏*****/
+
+/*顶部搜索框*/
+.g-box {
+	padding-top: 15px !important;
+	margin: 0px !important;
+}
+
+.g-header.g-header-fixed,
+.g-header-container {
+	position: static !important;
+	min-width: 1220px !important;
+	max-width: 1460px;
+	padding: 0px !important;
+	border: none !important;
+}
+
+/*其它*/
+
+/*上传*/
+.u-upload {
+	display: none !important;
+}
+
+/*****播放界面*****/
+
+/*下方-分享*/
+#module_basic_share,
+
+/*下方-下载*/
+
+/*下方-手机看*/
+#module_basic_phonewatch {
+	display: none !important;
+}
+
+/*****下方*****/
+
+/*拉伸左部(评论)*/
+.layout_121 .mainCol {
+	width: inherit !important;
+}
+
+/*左部*/
+#module_basic_sub,
+#module_cms_240885,
+#module_cms_241313,
+#module_basic_relationleft,
+#module_basic_star,
+
+/*右部*/
+#module_cms_240965,
+#module_basic_relationright,
+
+/*评论*/
+.comment-area-form,
+.comment-tooltip,
+
+/*****底部*****/
+
+/*页底*/
+.g-footer,
+
+/*右侧悬浮*/
+#sideTool.right-sideBar,
+
+/*底部评论悬浮*/
+.comment-tab.comment-tab-fixed {
+	display: none !important;
+}

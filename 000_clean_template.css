@@ -1,66 +1,48 @@
 /*
 名称:
 网站:
-2017.10.16
+2017.10.22
 水月仙森
 chiangchinming@gmail.com
 */
 
 /*****顶部*****/
 
-/*悬浮搜索框*/
-header[class="Sticky AppHeader is-fixed is-hidden"] {
-    display: none !important;
+/*悬浮搜索框*/ 
+{
+	display: none !important;
 }
 
 /*第一行:搜索框:居中*/
-.AppHeader-inner {
-    margin: 20px 0 auto 12%;
-}
-
-/*第一行:搜索框(鼠标划过显示)*/
-.Sticky.AppHeader.is-fixed {
-    height: 94px;
-    opacity: 0;
-    z-index: 10;
-    border-bottom: 0px;
-    box-shadow: none;
-}
-
-.AppHeader:hover,
-.AppHeader.is-fixed:hover {
-    opacity: 1;
+{
+	margin: 20px 0 auto 12%;
 }
 
 /*搜索框下面的内容上移*/
-.QuestionPage {
-    position: relative;
-    top: -64px;
+{
+	position: absolute;
+	top: 0px;
 }
 
 /*****标题*****/
 
-/*标题居中*/
-.QuestionHeader-main {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+/*标题居中*/ {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
 }
 
 /*标题字号*/
-h1.QuestionHeader-title {
-    font-size: 45px !important;
-    margin: 0;
+{
+	font-size: 45px !important;
+	margin: 0;
 }
 
 /*标题左上:*/
-.QuestionHeader-tags,
 
 /*标题下方:*/
-.QuestionHeader-detail,
 
 /*标题下方:*/
-.QuestionHeader-footer,
 
 /*标题右方:*/
 
@@ -68,47 +50,40 @@ h1.QuestionHeader-title {
 
 /*正文上方-*/
 
-/*全文背景颜色*/
-body {
-    background-color: #FFFFFF !important;
+/*全文背景颜色*/ {
+	background-color: #FFFFFF !important;
 }
 
 /*正文-边框处理*/
-.Question-mainColumn {
+{
 
-    /*增加阴影*/
-    -moz-box-shadow: 0px -10px 30px #BBB;
-    -webkit-box-shadow: 0px -10px 30px #BBB;
-    box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
-    margin: 0px !important;
-    padding-bottom: 0px;
-    padding: 10px !important;/*圆角*/
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
+	margin: 0px !important;
+	padding-bottom: 0px;
+	padding: 10px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
 }
+
 /*正文-内容居中*/
-.Question-mainColumn,
-.Layout-main {
-    width: 100% !important;
-    background-color: #FFFFFF !important;
-    margin: 0;
-    padding: 0;
+{
+	width: 100% !important;
+	background-color: #FFFFFF !important;
+	margin: 0;
+	padding: 0;
 }
 
 /*正文最下方:回答*/
 
-
 /*****正文右部:*****/
-
 
 /*****底部各种*****/
 
-
 /*****其它*****/
-
 
 /*底部右方悬浮:建议反馈*/
 
-
 /*广告插件提示*/
-

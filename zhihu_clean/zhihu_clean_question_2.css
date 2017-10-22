@@ -1,0 +1,5 @@
+.QuestionPage div:nth-child(2)
+{
+position:static;
+padding:16px 0;
+}

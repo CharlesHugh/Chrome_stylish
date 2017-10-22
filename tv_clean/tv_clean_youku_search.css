@@ -1,0 +1,33 @@
+/*
+优酷搜索页面
+^https?://www.soku.com/.*
+2017.10.22
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+
+/*登录*/
+.sk_masthead {
+	display: none !important;
+}
+
+/*悬浮搜索框*/
+.sk_header {
+	position: static !important;
+}
+
+/*****正文:******/
+
+/*****底部各种*****/
+.sk_footer,
+
+/*底部右方悬浮:建议反馈*/
+#sideBar
+
+/*****其它*****/ {
+	display: none !important;
+}
+
+/*广告插件提示*/

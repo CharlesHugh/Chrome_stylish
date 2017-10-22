@@ -18,6 +18,25 @@
 .choosedclass:hover {
 	opacity: 1;
 	transition-duration: 1s;	/*淡出,N秒后显示*/
-	-webkit-transform:rotate(360deg);	/*变换:旋转N度*/
-	transform:rotate(360deg);
+	-webkit-transform: rotate(360deg);	/*变换:旋转N度*/
+	transform: rotate(360deg);
+}
+
+/*居中方法*/
+
+/*1.flew-center*/
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+/*2.inline-block-center*/
+.inline-block-center {
+	text-align: center;
+}
+
+/*3.inline-block-center*/
+.inline-block-center div {
+	display: inline-block;
+	text-align: left;
 }

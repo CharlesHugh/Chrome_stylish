@@ -1,0 +1,28 @@
+/*
+优酷首页
+^https?://(www.)?youku.com/[^/]*
+2017.10.22
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部各种*/
+
+/*顶部右侧:vip*/
+.u-vip,
+
+/*顶部右侧:客户端*/
+.u-app,
+
+/*顶部悬浮搜索*/
+.g-header.g-header-fixed.white,
+
+/*左右悬浮*/
+#sideBar.side-bar {
+	display: none !important;
+}
+
+/*底部各种*/
+.g-footer {
+	display: none;
+}

@@ -1,0 +1,139 @@
+/*
+名称:百度经验-结果页
+网站:https://jingyan.baidu.com/article/.*
+2017.10.20
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部:1.右上用户信息 2.搜索框,*****/
+
+/***顶部-1.用户信息***/
+#usrbar.userbar,
+
+/*顶部右方:我的经验,弹窗*/
+#msg-arrow,
+#exp-msgbox {
+    display: none !important;
+}
+
+/***顶部-2.搜索框***/
+
+/*搜索框居中*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*搜索框右侧:帮助*/
+.s-tools {
+    display: none !important;
+}
+
+/*第一行:悬浮搜索框*/
+#top-nav-bar.top-nav-bar {
+    display: none !important;
+}
+
+/*****正文上方:1.百度经验分类 2.条目分类信息*****/
+
+/***正文上方:1.百度经验分类***/
+.wgt-common-nav,
+
+/***正文上方:2.条目分类信息***/
+#breadcrumb.breadcrumb {
+    display: none;
+}
+
+/*****正文:经验条目******/
+
+/*****标题*****/
+
+/*标题-居中*/ 
+.exp-title.clearfix {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+/*标题下方-居中:来源,图片*/
+ul.exp-info,
+.wgt-thumbs.clearfix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*标题右部:听语音:*/
+.audio-wp.audio-wp-1 {
+    display: none !important;
+}
+
+/*正文-边框处理*/
+#main-content {
+    -moz-box-shadow: 0px -10px 30px #BBB;
+    -webkit-box-shadow: 0px -10px 30px #BBB;
+    box-shadow: 0px -1px 30px #BBB;/*增加阴影*/
+    margin: 0px !important;
+    padding-bottom: 0px;
+    padding: 10px !important;/*调整内外边距*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;/*圆角*/
+}
+
+/*正文-内容居中*/
+#main-content {
+    width: 100% !important;
+    background-color: #FFFFFF !important;
+    margin-top: 20px !important;
+}
+
+/*****正文下部:内容仅供参考,作者声明,投票有用我有疑问,相关经验,*****/
+
+/*正文下部:内容仅供参考*/
+.prompt,
+
+/*正文下部:作者声明*/
+.f12,
+origin-notice,
+
+/*正文下部:投票有用我有疑问*/
+#wgt-comments.wgt-comments,
+
+/*正文下部:相关经验,*/
+.main-content-bottom {
+    display: none !important;
+}
+
+/*****正文右部:*****/
+
+/*****底部各种*****/
+
+/*底部:分享计划*/
+#aside,
+
+/*底部:热门杂志*/
+.magzine-list,
+
+/*底部:版权信息*/
+.footer,
+
+/*****其它*****/
+
+/*底部左侧悬浮:是否有用*/
+#wgt-like {
+    display: none !important;
+}
+
+/*底部右侧悬浮:分享,收藏,返回顶部*/
+#wgt-exp-share {
+    display: none !important;
+    bottom: 100px !important;
+}
+
+/*新功能NEW*/
+i.new-icon {
+    display: none;
+}

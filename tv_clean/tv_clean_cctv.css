@@ -1,0 +1,45 @@
+/*
+cctv
+^https?://tv.cctv.com/.*
+2017.10.22
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*顶部搜索框*/
+.column_wrapper_160119,
+
+/*顶部右侧*/
+.optionBox,
+
+/*播放器底部*/
+.lb .kj,
+
+/*收藏,播放量*/
+.text_fx,
+
+/*急速插件*/
+.gq,
+
+/*分享*/
+#baidu_share {
+	display: none;
+}
+
+/*底部*/
+
+/*右下悬浮窗=回到顶部*/
+.ycc2,
+
+/*客户端*/
+.ELMTfuTG06Y73UOWLwhwjhUS160119,
+
+/*底部各类信息*/
+#page_bottom,
+.col_320_320_320,
+#SUBD1463723269632547,
+
+/*其它*/
+.ind01_tc {
+	display: none !important;
+}

@@ -1,0 +1,47 @@
+/*
+名称:百度经验-分步阅读
+网站:https://jingyan.baidu.com/album/.*
+2017.10.20
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶栏:全文阅读,标题,语音,搜索框,投票收藏*****/
+
+/*顶栏:全文阅读*/
+
+/*顶栏:标题居中*/
+#exp-title.title {
+	position: relative;
+	width: 100%;
+	left: 0 !important;
+	margin: auto;
+	text-align: center;
+}
+
+/*顶栏:语音*/
+.audio-wp,
+
+/*顶栏:搜索框*/
+form#step-search-form.step-search-form,
+
+/*顶栏:投票收藏*/
+.options.clearfix {
+	display: none !important;
+}
+
+/*****正文*****/
+
+/*尾页居中*/
+.replay {
+	height: 100%;
+	width: 100%;
+}
+
+.replay dl.clearfix {
+	margin: 10% auto auto 10% !important;
+}
+
+.recommand-list.clearfix {
+	display: none;
+}

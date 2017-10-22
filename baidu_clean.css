@@ -194,39 +194,27 @@ div[id="pagelet_frs-list/pagelet/thread_footer"] {
 
 }
 
-@-moz-document regexp("^https?://www.baidu.com/") {
+@-moz-document regexp("^https?://(www.)?baidu.com/[^/]*") {
 /*百度搜索首页
-^https?://www.baidu.com/
-2017.10.15
+^https?://(www.)?baidu.com/[^/]*
+2017.10.22
 水月仙森
 chiangchinming@gmail.com
 */
 
-/*屏蔽不用按钮*/
-#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top,
-#u_sp.s-isindex-wrap.s-sp-menu a[href="http://www.hao123.com"],
-#bottom_container.s-bottom-ctner {
+/*****顶部*****/
+
+/*顶栏:背景透明*/
+#s_top_wrap.s-top-wrap {
 	display: none;
 }
 
-a.s_bri {
-	display: none !important;
+#s_upfunc_menus,
+#u_sp {
+	background: transparent !important;
 }
 
-/*屏蔽搜索框右侧"语音、照相、百度一下"三个按钮*/
-#s_btn_wr.btn_wr.s_btn_wr.bg,
-span.soutu-btn,
-span.ipt_rec {
-	display: none !important;
-}
-
-form#form.fm {
-	text-align: center;
-	width: 100%;  /*修正搜索框,居中对齐*/
-}
-
-/*顶部隐藏,悬浮显示*/
-#s_top_wrap.s-top-wrap,
+/*顶栏隐藏,悬浮显示*/
 #s_upfunc_menus.s-upfunc-menus,
 #u_sp.s-isindex-wrap.s-sp-menu {
 	background: #333;
@@ -237,162 +225,364 @@ form#form.fm {
 #u_sp.s-isindex-wrap.s-sp-menu:hover {
 	opacity: 1;
 }
+
+/*顶栏-左侧:消息*/
+#s_icons a.s-msg,
+
+/*顶栏-右侧:hao123,新闻,地图,视频,贴吧,学术*/
+a[href="http://www.hao123.com"],
+a[href="http://news.baidu.com"],
+a[href="http://map.baidu.com"],
+a[href="http://v.baidu.com"],
+a[href="http://tieba.baidu.com"],
+a[href="http://xueshu.baidu.com"],
+
+/*顶栏-右侧:更多产品*/
+a.bri,
+
+/**/
+#s_user_name_menu.s-isindex-wrap.s-user-set-menu.menu-top {
+	display: none !important;
+}
+
+/*搜索框-输入框*/
+#kw.s_ipt {
+	float: left;
+	width: inherit;
+}
+
+/*搜索框右侧:语音、照相、百度一下*/
+span.ipt_rec,
+span.soutu-btn
+
+/*搜索框右侧:百度一下*/
+
+/*.s_btn_wr*/ {
+	display: none !important;
+}
+
+/*****正文:百度logo,搜索框*****/
+
+/*正文-位置调整*/
+
+#head_wrapper {
+	width: 100%;
+	padding: 0 !important;
+	margin: auto 0;
+	height: 50%;
+}
+
+/*正文-2.搜索框:居中对齐*/
+form#form.fm {
+	text-align: center;
+	width: 100%;
+}
+
+/*****底部*****/
+
+/*手机百度+二维码*/
+.qrcodeCon,
+
+/*版权信息*/
+#ftCon,
+#bottom_container.s-bottom-ctner {
+	display: none;
+}
+
+a.s_bri {
+	display: none !important;
+}
+
+/*****其它*****/
+
+/*屏蔽滚轮*/::-webkit-scrollbar {
+	display: none;
+}
+
 }
 
 @-moz-document regexp("^https?://www.baidu.com/s.*") {
 /*
 百度搜索搜索页
 ^https?://www.baidu.com/s.*
-2017.10.17
+2017.10.21
 水月仙森
 chiangchinming@gmail.com
 */
 
-/*首行搜索框简化-左侧*/
-.bg.s_ipt_wr.quickdelete-wrap {
-	width: 50%
+/*隐藏顶部悬浮搜索框*/
+
+#head {
+	position: static;
 }
 
+/*****顶部:搜索框,用户信息,导航栏*****/
+
+/***顶部:1.搜索框,用户信息***/
+
+/*搜索框:居中*/
+#head.s_down .head_wrapper .s_form,
+#head .head_wrapper .s_form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+#head,
+#head.s_down,
+#head .head_wrapper,
+.s_form,
+.s_form_wrapper.soutu-env-mac soutu-env-result
+{
+width:inherit!iportant;
+height:inherit!important;
+
+}
+*/
+#head {
+	margin: 0;
+	width: inherit;
+}
+
+/*搜索框-输入框:宽度*/
+
+/*
+.bg.s_ipt_wr.quickdelete-wrap {
+width:80%;
+}
+*/
+
+/*搜索框-输入框右侧:语音,照相*/
 span.ipt_rec,
-span.soutu-btn {
+span.soutu-btn,
+
+/*搜索框-输入框右侧:百度首页*/
+a.toindex,
+
+/*搜索框-下方:为您推荐*/
+.headBlock,
+.hint_toprq_tips.f13.se_common_hint {
 	display: none !important;
 }
 
-/*首行搜索框简化-右侧*/
-a.toindex {
-	display: none;
-}
+/***顶部:2.用户信息***/
 
+/*用户信息:鼠标滑动显示*/
 #u {
-	opacity: 0;
+	opacity: 1;
 }
 
 #u:hover {
 	opacity: 1;
 }
 
-/*****搜索界面*****/
+/***顶部:3.导航栏***/
+.s_tab {
+	display: none;
+}
 
-/*1.搜索结果-搜索工具*/
+/*****正文:搜索结果数,搜索结果,相关搜索,页码数*****/
+
+/***正文:边框***/
+#content_left {
+
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
+	margin: 0px !important;
+	padding-bottom: 0px;
+	padding: 10px 0 10px 40px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+/***正文:页面拉伸***/
+
+/*搜索结果*/
+
+.c-container {
+	width: 100% !important;
+}
+
+/*正文:2.搜索结果*/
+#content_left {
+	width: inherit !important;
+}
+
+/***正文:内容居中***/
+
+/*正文*/
+#container.container_l,
+
+/*正文条目-百度系:贴吧,百科,翻译*/
+#content_left .result-op.c-container,
+
+/*正文条目-非百度系*/
+#content_left .result.c-container,
+
+/*相关搜索*/
+#rs {
+	margin: 0 auto !important;
+}
+
+/*页码数*/
+#page {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/***正文:1.搜索结果数***/
+
+/*搜索结果数:居中*/
+.nums {
+	margin: 0 !important;
+	width: 100%;
+	text-align: center;
+}
+
+/*搜索结果数-右侧:搜索工具*/
 .search_tool {
 	display: none;
 }
 
-/*界面居中*/
-.head_nums_cont_outer.OP_LOG,
-#content_left {
-	width: 100%;
+/***正文:2.搜索结果***/
+
+/**搜索结果:内容拉伸**/
+.c-span18.c-span-last {
+	width: inherit;
+	overflow: auto !important;
 }
 
-#page,
-#content_left {
-	padding: 0;
-}
+/**搜索结果:内容修改**/
 
-#head .head_wrapper {
-	margin: 0 auto 0 30%;
-}
-
-.nums,
-#content_left .result-op.c-container,
-#content_left .result.c-container,
-#rs,
-#page {
-	margin-left: 20% !important;
-}
-
-/*搜索结果-网址*/
-.c-showurl,
-.c-span18.c-span-last .f13,
-
-/*搜索结果-内容*/
-.c-span24.c-span-last,
-.op-tieba-general-maintable,
-.c-abstract,
-.result.c-container {
-	width: 600px;
-}
-
-/*搜索结果-下划线*/
+/*搜索结果-所有-网址:下划线*/
 a:-webkit-any-link {
 	text-decoration: none;
 }
 
+/*搜索结果-左上-标题:红色高亮*/
 a em {
 	color: inherit;
 	text-decoration: none;
 }
 
-/*搜索结果-图片*/
+/**搜索结果-左侧图片**/
+
+/*百度百科+百度经验*/
+
+/*.c-span6,.c-img.c-img6,*/
+
+/*百度贴吧*/
 .op-tieba-general-mainpic,
 a.st_com_abstract.c-span6,
+
+/*其它图片*/
 .general_image_pic.c-span6 {
 	display: none;
 }
 
-/*搜索结果-其它*/
-.c-table.op_pcsoft_table tbody tr th,
-.c-gap-top,
-.op_LAMP {
-	display: none;
+/**搜索结果-底部-网站链接**/
+
+/*.c-showurl,*/
+
+/**搜索结果-底部-网站链接-右侧:**/
+
+/*百度开放平台*/
+.op_LAMP,
+
+/*V1V2V3*/
+.c-icon.c-icon-v,
+
+/*百度快照,百度口碑*/
+.m,
+
+/*百度口碑-评价*/
+.c-pingjia,
+
+/*其它*/
+.c-icons-outer,
+.c-tools {
+	display: none !important;
 }
 
 .c-index-hot.c-index.c-gap-icon-right-small {
 	background-color: #8eb9f5;
 }
 
-.c-gap-right-small.op-se-listen-recommend {
+/*搜索结果-百度百科:颜色*/
+.c-gap-right-small.op-se-listen-recommend,
+.op-se-listen-recommend {
 	color: #000;
 }
 
-/*tieba*/
-.op-tieba-general-right {
-	color: #000;
+/*搜索结果-贴吧:方框*/
+table.op-tieba-general-maintable {
+	width: 518px !important;
+	margin: 9px 9px 9px 9px !important;
+	border: 1px solid #e3e3e3;
+	border-bottom-color: #e0e0e0;
+	border-right-color: #ececec;
+	box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
+	-webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
 }
 
+td.op-tieba-general-firsttd {
+	padding: 9px;
+}
+
+td.op-tieba-general-firsttd.op-tieba-general-mainpl {
+	padding-top: 0 !important;
+	padding-bottom: 0px !important;
+}
+
+/*搜索结果-贴吧:颜色*/
+.op-tieba-general-right,
+.op-tieba-general-linktxt {
+	color: #000 !important;
+}
+
+/*搜索结果-贴吧:查看更多XX贴吧-*/
 .op-tieba-general-lookmore.op-tieba-general-mainpl {
 	display: none;
 }
 
 /*****各种屏蔽*****/
 
-/*隐藏顶部悬浮搜索框*/
-#head {
-	position: static;
-}
-
-#head.s_down {
-	display: none !important;
-}
-
 /*顶部推荐*/
-.leftBlock {
-	display: none;
-}
+.leftBlock,
 
-/*顶部分类:网页、新闻...*/
-.s_tab {
-	display: none;
-}
+/*顶部-导航栏*/
+.s_tab,
 
 /*右侧推荐*/
-#content_right {
-	display: none;
-}
+#content_right,
 
-/*底部*/
-#page span.pc {
-	border: none;
-}
-
-#foot {
-	display: none;
-}
+/*底部-相关搜索*/
+#rs,
 
 /*网址悬浮*/
-.c-tip-con {
+.c-tip-con,
+
+/*底部-百度企业信息*/
+#foot,
+
+/*底部-页码页*/
+
+span.fk {
 	display: none !important;
 }
+
+#page a,
+#page strong {
+	height: 100%;
+}
+
+/*其它*/
 
 }
 
@@ -487,6 +677,263 @@ div#J-declare-wrap.declare-wrap {
 	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
 	-webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
 	-moz-box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+}
+
+}
+
+@-moz-document regexp("^https://jingyan.baidu.com/article/.*") {
+/*
+名称:百度经验-结果页
+网站:https://jingyan.baidu.com/article/.*
+2017.10.20
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部:1.右上用户信息 2.搜索框,*****/
+
+/***顶部-1.用户信息***/
+#usrbar.userbar,
+
+/*顶部右方:我的经验,弹窗*/
+#msg-arrow,
+#exp-msgbox {
+    display: none !important;
+}
+
+/***顶部-2.搜索框***/
+
+/*搜索框居中*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*搜索框右侧:帮助*/
+.s-tools {
+    display: none !important;
+}
+
+/*第一行:悬浮搜索框*/
+#top-nav-bar.top-nav-bar {
+    display: none !important;
+}
+
+/*****正文上方:1.百度经验分类 2.条目分类信息*****/
+
+/***正文上方:1.百度经验分类***/
+.wgt-common-nav,
+
+/***正文上方:2.条目分类信息***/
+#breadcrumb.breadcrumb {
+    display: none;
+}
+
+/*****正文:经验条目******/
+
+/*****标题*****/
+
+/*标题-居中*/ 
+.exp-title.clearfix {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+/*标题下方-居中:来源,图片*/
+ul.exp-info,
+.wgt-thumbs.clearfix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*标题右部:听语音:*/
+.audio-wp.audio-wp-1 {
+    display: none !important;
+}
+
+/*正文-边框处理*/
+#main-content {
+    -moz-box-shadow: 0px -10px 30px #BBB;
+    -webkit-box-shadow: 0px -10px 30px #BBB;
+    box-shadow: 0px -1px 30px #BBB;/*增加阴影*/
+    margin: 0px !important;
+    padding-bottom: 0px;
+    padding: 10px !important;/*调整内外边距*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;/*圆角*/
+}
+
+/*正文-内容居中*/
+#main-content {
+    width: 100% !important;
+    background-color: #FFFFFF !important;
+    margin-top: 20px !important;
+}
+
+/*****正文下部:内容仅供参考,作者声明,投票有用我有疑问,相关经验,*****/
+
+/*正文下部:内容仅供参考*/
+.prompt,
+
+/*正文下部:作者声明*/
+.f12,
+origin-notice,
+
+/*正文下部:投票有用我有疑问*/
+#wgt-comments.wgt-comments,
+
+/*正文下部:相关经验,*/
+.main-content-bottom {
+    display: none !important;
+}
+
+/*****正文右部:*****/
+
+/*****底部各种*****/
+
+/*底部:分享计划*/
+#aside,
+
+/*底部:热门杂志*/
+.magzine-list,
+
+/*底部:版权信息*/
+.footer,
+
+/*****其它*****/
+
+/*底部左侧悬浮:是否有用*/
+#wgt-like {
+    display: none !important;
+}
+
+/*底部右侧悬浮:分享,收藏,返回顶部*/
+#wgt-exp-share {
+    display: none !important;
+    bottom: 100px !important;
+}
+
+/*新功能NEW*/
+i.new-icon {
+    display: none;
+}
+
+}
+
+@-moz-document regexp("^https://jingyan.baidu.com/album/.*") {
+/*
+名称:百度经验-分步阅读
+网站:https://jingyan.baidu.com/album/.*
+2017.10.20
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶栏:全文阅读,标题,语音,搜索框,投票收藏*****/
+
+/*顶栏:全文阅读*/
+
+/*顶栏:标题居中*/
+#exp-title.title {
+	position: relative;
+	width: 100%;
+	left: 0 !important;
+	margin: auto;
+	text-align: center;
+}
+
+/*顶栏:语音*/
+.audio-wp,
+
+/*顶栏:搜索框*/
+form#step-search-form.step-search-form,
+
+/*顶栏:投票收藏*/
+.options.clearfix {
+	display: none !important;
+}
+
+/*****正文*****/
+
+/*尾页居中*/
+.replay {
+	height: 100%;
+	width: 100%;
+}
+
+.replay dl.clearfix {
+	margin: 10% auto auto 10% !important;
+}
+
+.recommand-list.clearfix {
+	display: none;
+}
+
+}
+
+@-moz-document regexp("https?://pan.baidu.com/disk/home.*"), regexp("https?://pan.baidu.com/disk/discovery"), regexp("https?://pan.baidu.com/mbox/.*") {
+/*
+名称:百度网盘所有文件
+网站:https?://pan.baidu.com/disk/home.*
+网站:https?://pan.baidu.com/mbox/.*
+网站:https?://pan.baidu.com/disk/discovery
+2017.10.22
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+
+/***左侧:百度网盘logo,网盘,分享更多***/
+
+/***右侧:用户头像,客户端下载,系统通知、意见反馈、皮肤,会员中心***/
+
+/*1.用户头像*/
+.JS-user-level.level-0,
+
+/*1.用户头像-悬浮*/
+.vip-notice,
+.vip-privilege,
+
+/*2.客户端下载*/
+.Ebdyswb,
+.app-download,
+
+/*3.2意见反馈*/
+a.icon.icon-feedback.app-feedback.app-icon,
+
+/*4.会员中心*/
+a.KQcHyA,
+
+/***其它***/
+
+/***红点:***/
+
+/*~/home*/
+.find-light-icon,
+.newIcon,
+
+/*~/discovery*/
+.icon-new-msg,
+.icon-new-thing,
+
+/*****左侧*****/
+
+/*底部:客户端下载*/
+.feNMdtb.g-clearfix,
+
+/*底部:客户端下载上方-容量*/
+.GELdyA {
+	display: none !important;
+}
+
+/*底部:客户端下载上方-容量*/
+.aside-absolute-container {
+	bottom: 10px !important;
 }
 
 }

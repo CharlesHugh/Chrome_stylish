@@ -1,0 +1,130 @@
+/*
+知乎-关注话题-具体话题
+https?://www.zhihu.com/topic#.*
+2017.10.19
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+.zhi.js-topic-feed-page.topic-feed-page {
+	padding: 0px;
+}
+
+/***搜索框***/
+
+/*悬浮-顶部搜索框*/
+.zu-top {
+	position: relative;
+	z-index: 20;
+	top: 0px;
+	opacity: 0;
+}
+
+.zu-top:hover {
+	opacity: 1;
+}
+
+/*****正文:已关注话题列表,关注话题及排序方式,该话题下问题列表*****/
+
+/*搜索框下面的内容上移*/
+.zu-main-content-inner {
+	position: relative !important;
+	top: -46px;
+}
+
+/*正文-居中拉伸*/
+.zu-main-content
+.zu-main-content-inner {
+	width: 100%;
+	margin: 0 auto!important;
+	background-color: #FFFFFF !important;
+}
+
+/*正文-边框处理(问题列表)*/
+.zm-topic-list-container {
+
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
+	margin: 0px !important;
+	padding-bottom: 0px;
+	padding: 20px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+/*正文右方:其他人关注的话题*/
+.zu-main-sidebar {
+	display: none;
+}
+
+/*正文-各空隙*/
+html.is-AppPromotionBarVisible body {
+	padding-bottom: 0;
+}
+
+.zu-main {
+	padding-bottom: 0;
+}
+
+/*****正文1:已关注话题列表*****/
+
+/*关注话题个数*/
+.topic-feed-title {
+	display: none;
+}
+
+.zg-wrap.zu-main.clearfix {
+	padding-top: 0;
+}
+
+/*关注话题列表*/
+ul.zm-topic-cat-main.js-topic-cat-main.clearfix {
+	border-bottom: 0px;
+	padding: 20px;
+	display: flex;/*首行居中,剩余行填满*/
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+/*****正文2:选择话题及排序方式*****/
+.topic-title.clearfix.js-topic-title {
+	display: none !important;
+}
+
+/*****正文3:选择话题下问题列表*****/
+ul.zm-topic-cat-main.js-topic-cat-main.clearfix {
+	position: static;
+	z-index: 0;
+}
+
+/*单问题-左方-认同数*/
+.zm-votebar {
+	left: -55px !important;
+	opacity: 1;
+}
+
+/*单问题-下方:关注问题,N条评论,作者保留权利*/
+.zm-item-meta.answer-actions {
+	display: none !important
+}
+
+/*****底部*****/
+#zh-footer.zh-footer {
+	display: none;
+}
+
+/*****其它各种*****/
+
+/*悬浮-右下角-建议反馈*/
+.FeedbackButton-button-3waL,
+
+/*广告插件提示*/
+.AdblockBanner,
+
+/*悬浮-右下角-回到顶部*/
+.zh-backtotop {
+	display: none;
+}
