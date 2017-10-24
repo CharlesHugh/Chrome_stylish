@@ -1,0 +1,75 @@
+/*
+腾讯视频首页
+^https?://v.qq.com/.*
+2017.10.24
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶栏:下拉******/
+#top_followSeries {
+	display: none !important;
+}
+
+/*****顶部搜索框******/
+.g-box {
+	padding-top: 15px !important;
+	margin: 0px !important;
+}
+
+/*VIP*/
+.quick_item.quick_vip,
+
+/*上传*/
+.quick_item.quick_upload,
+
+/*下载客户端*/
+#pc_client,
+
+/*用户-鼠标悬浮-开通VIP*/
+.account_type,
+.quick_vip_meta,
+.quick_features.cf {
+	display: none !important;
+}
+
+.mod_quick_pop .quick_pop_btn {
+	top: 0;
+	padding-bottom: 0 !important;
+	margin: 0 !important;
+}
+
+/*其它*/
+
+/*****底部*****/
+.mod_row_box.mod_row_box_ad,
+
+/*页底*/
+.site_footer {
+	display: none !important;
+}
+
+/*****悬浮*****/
+
+/*顶部悬浮搜索框*/
+.site_head.site_head_sticky {
+	position: static !important;
+	min-width: 1220px !important;
+	max-width: 1460px;
+	padding: 0px !important;
+	border: none !important;
+}
+
+/*小视频悬浮*/
+#mod_player.mod_player.mod_player_float,
+
+/*右侧悬浮*/
+#shortcut.x_fixed_tool,
+
+/*返回顶部*/
+.backtop_inner,
+
+/*意见反馈*/
+.mod_fiexdtool {
+	display: none !important;
+}

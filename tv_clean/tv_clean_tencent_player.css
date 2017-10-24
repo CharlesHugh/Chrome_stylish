@@ -1,0 +1,109 @@
+/*
+腾讯视频-播放页面
+^https?//v.qq.com/x/page/.*
+2017.10.24
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶栏:下拉******/
+#top_followSeries {
+	display: none !important;
+}
+
+/*****顶部搜索框******/
+.g-box {
+	padding-top: 15px !important;
+	margin: 0px !important;
+}
+
+/*VIP*/
+.quick_item.quick_vip,
+
+/*上传*/
+.quick_item.quick_upload,
+
+/*下载客户端*/
+#pc_client,
+
+/*用户-鼠标悬浮-开通VIP*/
+.account_type,
+.quick_vip_meta,
+.quick_features.cf {
+	display: none !important;
+}
+
+.mod_quick_pop .quick_pop_btn {
+	top: 0;
+	padding-bottom: 0 !important;
+	margin: 0 !important;
+}
+
+/*其它*/
+
+/*****正文左******/
+
+/*****播放界面*****/
+.mod_player_section.cf {
+	height: 495px;
+}
+
+/*右上-加入看单*/
+.txp_top_btns {
+	display: none !important
+}
+
+.mod_action.cf,
+.action_wrap.cf,
+
+/*下方-分享*/
+.action_item.action_share,
+
+/*下方-手机看*/
+.action_item.action_qrcode,
+
+/*下方-举报*/
+.action_item.action_more {
+	display: none !important;
+}
+
+/*****下方*****/
+
+/*拉伸左部(评论)*/
+
+/*左部*/
+
+/*右部*/
+
+/*评论*/
+
+/*****正文右******/
+
+/***下方-VIP专属福利***/
+.mod_box,
+
+/*****底部*****/
+
+/*页底*/
+.site_footer {
+	display: none !important;
+}
+
+/*****悬浮*****/
+
+/*顶部悬浮搜索框*/
+.site_head.site_head_sticky {
+	position: static !important;
+	min-width: 1220px !important;
+	max-width: 1460px;
+	padding: 0px !important;
+	border: none !important;
+}
+
+/*右侧悬浮*/
+#shortcut.x_fixed_tool,
+
+/*小视频悬浮*/
+#mod_player.mod_player.mod_player_float {
+	display: none !important;
+}

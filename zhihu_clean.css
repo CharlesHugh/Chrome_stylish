@@ -2,7 +2,7 @@
 /*
 知乎-回答页
 https?://www.zhihu.com/question/.*
-2017.10.19
+2017.10.23
 水月仙森
 chiangchinming@gmail.com
 */
@@ -59,7 +59,7 @@ header[class="Sticky AppHeader is-fixed is-hidden"] {
 
 /*标题字号*/
 h1.QuestionHeader-title {
-    margin: 0 auto!important;
+    margin: 0 auto !important;
     font-size: xx-large;
     font-weight: 700;
     line-height: 1.3;
@@ -95,12 +95,12 @@ body {
 .Question-mainColumn {
 
     /*增加阴影*/
-    -moz-box-shadow: 0px -10px 30px #BBB;
-    -webkit-box-shadow: 0px -10px 30px #BBB;
-    box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
+    -moz-box-shadow: 0px -1px 10px #BBB;
+    -webkit-box-shadow: 0px -1px 10px #BBB;
+    box-shadow: 0px -1px 10px #BBB;/*调整内外边距*/
     margin: 0px !important;
     padding-bottom: 0px;
-    padding: 10px !important;/*圆角*/
+    padding: 20px !important;/*圆角*/
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
 }
@@ -158,7 +158,6 @@ body {
 .AdblockBanner {
     display: none;
 }
-
 }
 
 @-moz-document regexp("https?://www.zhihu.com/topic.*") {
@@ -210,9 +209,9 @@ chiangchinming@gmail.com
 .zm-topic-list-container {
 
     /*增加阴影*/
-    -moz-box-shadow: 0px -10px 30px #BBB;
-    -webkit-box-shadow: 0px -10px 30px #BBB;
-    box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
+    -moz-box-shadow: 0px -1px 10px #BBB;
+    -webkit-box-shadow: 0px -1px 10px #BBB;
+    box-shadow: 0px -1px 10px #BBB;/*调整内外边距*/
     margin: 0px !important;
     padding-bottom: 0px;
     padding: 20px !important;/*圆角*/
@@ -317,16 +316,15 @@ a.meta-item.zu-autohide.js-report {
 
 /*搜索框-背景*/
 .zu-top {
-  background-image: none;
-  border-bottom: none;
-  background-color: #34495e;
+    background-image: none;
+    background-color: #34495e;
 }
 
 /*搜索框-输入框*/
 .zu-top-search-input {
-  color: #536a81;
-  background: #293a4a;
-  border:none;
+    color: #536a81;
+    background: #293a4a;
+    border: none;
 }
 
 /*搜索框-搜索按钮*/
@@ -337,39 +335,39 @@ a.meta-item.zu-autohide.js-report {
 
 /*搜索框-发现*/
 #zh-top-nav-explore {
-  background-image: none !important;
-  background: none;
-  border: none !important;
-  box-shadow: none!important;
+    background-image: none !important;
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /*搜索框-提问按钮*/
 .zu-top-add-question {
-  background-image: none !important;
-  border-radius: 3px;
-  border: 1px solid #4e6d8d;
-  box-shadow: none !important;
-  opacity: .9;
-  -ms-filter: "alpha(Opacity=90)";
-  line-height: 0px;
+    background-image: none !important;
+    border-radius: 3px;
+    border: 1px solid #4e6d8d;
+    box-shadow: none !important;
+    opacity: .9;
+    -ms-filter: "alpha(Opacity=90)";
+    line-height: 0px;
 }
 
 /*搜索框-个人头像悬浮*/
 .zu-top-nav-userinfo,
 .top-nav-profile a {
-  background: #34495E !important;
-  border: none !important;
-  box-shadow: none !important;
+    background: #34495E !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .top-nav-profile a:hover {
-  background: #293a4a !important;
+    background: #293a4a !important;
 }
 
 /***黑色背景-2.正文部分***/
 .topics-plaza a:nth-child(1),/*进入话题广场(~/topic#??)*/
 .zm-topic-cat-item.current a,.zm-topic-cat-item:hover a/*已关注的话题动态(~/topic#??)*/ {
-  background: #34495E !important;
+    background: #34495E !important;
 }
 
 /*****黑色背景-结束*****/

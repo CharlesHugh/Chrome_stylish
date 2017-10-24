@@ -57,3 +57,8 @@ a.KQcHyA,
 .aside-absolute-container {
 	bottom: 10px !important;
 }
+
+/*****其它*****/
+#show-buyvip-pack {
+	display: none !important
+}
