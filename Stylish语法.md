@@ -1,5 +1,8 @@
 stylish语法
 
+滑动块宽度:
+::-webkit-scrollbar {
+    width: 8px;}
 
 1.".<classname>":指定名为classname的class
 2."div[id="idname"]":指定id名为idname的div

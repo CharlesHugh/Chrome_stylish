@@ -1,0 +1,227 @@
+/*
+知乎-发现
+https?://www.zhihu.com/explore
+知乎-搜索页
+https?:\/\/www.zhihu.com/search\?q\=.*
+知乎-私信
+https?://www.zhihu.com/inbox
+2017.11.11
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+.zhi.js-topic-feed-page.topic-feed-page {
+	padding: 0px;
+}
+
+/***搜索框***/
+
+/*悬浮-顶部搜索框*/
+.zu-top {
+	position: absolute;
+	z-index: 20;
+	top: 0px;
+	opacity: 1;
+}
+
+.zu-top:hover {
+	opacity: 1;
+}
+
+/*****正文:已关注话题列表,关注话题及排序方式,该话题下问题列表*****/
+
+/*搜索框下面的内容上移*/
+.zu-main-content-inner {
+	position: relative !important;
+}
+
+/*正文-居中拉伸*/
+.zu-main-content
+.zu-main-content-inner {
+	width: 100%;
+	margin: 0 auto !important;
+	background-color: #FFFFFF !important;
+}
+
+/*正文-上边距*/
+.zu-main-content {
+	margin-top: 10px;
+}
+
+/*正文-边框处理(问题列表)*/
+.zu-main-content-inner,
+.zm-topic-list-container {
+
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -1px 20px #BBB;/*调整内外边距*/
+	margin: 0 !important;
+	padding-bottom: 0px;
+	padding: 20px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+/*正文右方:其他人关注的话题*/
+.zu-main-sidebar {
+	display: none;
+}
+
+/*正文-各空隙*/
+html.is-AppPromotionBarVisible body {
+	padding-bottom: 0;
+}
+
+.zu-main {
+	padding-bottom: 0;
+}
+
+/*****正文1:已关注话题列表*****/
+
+/*关注话题个数*/
+.topic-feed-title {
+	display: none;
+}
+
+.zg-wrap.zu-main.clearfix {
+	padding-top: 0;
+}
+
+/*关注话题列表*/
+ul.zm-topic-cat-main.js-topic-cat-main.clearfix {
+	border-bottom: 0px;
+	padding: 20px;
+	display: flex;/*首行居中,剩余行填满*/
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+/*****正文2:选择话题及排序方式*****/
+.topic-title.clearfix.js-topic-title {
+	display: none !important;
+}
+
+/*****正文3:选择话题下问题列表*****/
+ul.zm-topic-cat-main.js-topic-cat-main.clearfix {
+	position: static;
+	z-index: 0;
+}
+
+/*单问题-左方-认同数*/
+.zm-votebar {
+	left: -55px !important;
+	opacity: 1;
+}
+
+/*单问题-下方:关注问题,N条评论,作者保留权利*/
+
+/*
+.zm-item-meta.answer-actions {
+display: none !important
+}
+*/
+
+/*N条评论-最大宽度*/
+.comment-app-holder {
+	max-width: unset !important;
+}
+
+/*作者保留权利*/
+span.zg-bull,
+a.meta-item.copyright {
+	display: none;
+}
+
+/*分享,收藏,没有帮助,举报*/
+
+/*.goog-inline-block.goog-menu-button-caption,*/
+a.meta-item.zu-autohide.js-collect,
+a.meta-item.zu-autohide.js-noHelp,
+span.zg-bull,
+zu-autohide,
+a.meta-item.zu-autohide.js-report {
+	display: none !important;
+}
+
+/*****底部*****/
+#zh-footer.zh-footer {
+	display: none;
+}
+
+/*****其它各种*****/
+
+/*悬浮-右下角-建议反馈*/
+.FeedbackButton-button-3waL,
+
+/*广告插件提示*/
+.AdblockBanner,
+
+/*悬浮-右下角-回到顶部*/
+.zh-backtotop {
+	display: none;
+}
+
+/*****黑色背景-开始*****/
+
+/***黑色背景-1.搜索框***/
+
+/*搜索框-背景*/
+.zu-top {
+	background-image: none;
+	border-bottom: none;
+	background-color: #34495e;
+}
+
+/*搜索框-输入框*/
+.zu-top-search-input {
+	color: #536a81;
+	background: #293a4a;
+	border: none;
+}
+
+/*搜索框-搜索按钮*/
+.zu-top-search-button,
+
+/*搜索框-话题*/
+#zh-top-nav-topic,
+
+/*搜索框-发现*/
+#zh-top-nav-explore {
+	background-image: none !important;
+	background: none;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/*搜索框-提问按钮*/
+.zu-top-add-question {
+	background-image: none !important;
+	border-radius: 3px;
+	border: 1px solid #4e6d8d;
+	box-shadow: none !important;
+	opacity: .9;
+	-ms-filter: "alpha(Opacity=90)";
+	line-height: 0px;
+}
+
+/*搜索框-个人头像悬浮*/
+.zu-top-nav-userinfo,
+.top-nav-profile a {
+	background: #34495E !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.top-nav-profile a:hover {
+	background: #293a4a !important;
+}
+
+/***黑色背景-2.正文部分***/
+.topics-plaza a:nth-child(1),/*进入话题广场(~/topic#??)*/
+.zm-topic-cat-item.current a,.zm-topic-cat-item:hover a/*已关注的话题动态(~/topic#??)*/ {
+	background: #34495E !important;
+}
+
+/*****黑色背景-结束*****/

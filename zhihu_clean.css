@@ -481,11 +481,15 @@ display: none !important;
 
 }
 
-@-moz-document regexp("https?://www.zhihu.com/explore") {
+@-moz-document regexp("https?://www.zhihu.com/explore"), regexp("https?:\\/\\/www.zhihu.com/search\\?q\\=.*"), regexp("https?://www.zhihu.com/inbox") {
 /*
 知乎-发现
 https?://www.zhihu.com/explore
-2017.10.19
+知乎-搜索页
+https?:\/\/www.zhihu.com/search\?q\=.*
+知乎-私信
+https?://www.zhihu.com/inbox
+2017.11.11
 水月仙森
 chiangchinming@gmail.com
 */
@@ -602,6 +606,11 @@ ul.zm-topic-cat-main.js-topic-cat-main.clearfix {
 display: none !important
 }
 */
+
+/*N条评论-最大宽度*/
+.comment-app-holder {
+    max-width: unset !important;
+}
 
 /*作者保留权利*/
 span.zg-bull,
