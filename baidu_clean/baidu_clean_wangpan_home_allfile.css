@@ -1,23 +1,27 @@
 /*
 名称:百度网盘所有文件
-网站:https?://pan.baidu.com/disk/home.*
+网站:https?://pan.baidu.com/disk/.*
 网站:https?://pan.baidu.com/mbox/.*
-网站:https?://pan.baidu.com/disk/discovery
-2017.10.22
+网站:https?://pan.baidu.com/s/.*;
+2017.12.18
 水月仙森
 chiangchinming@gmail.com
 */
 
 /*****顶部*****/
 
-/***左侧:百度网盘logo,网盘,分享更多***/
+/***顶部-左侧:百度网盘logo,网盘,分享更多***/
 
-/***右侧:用户头像,客户端下载,系统通知、意见反馈、皮肤,会员中心***/
+/***顶部-右侧:用户头像,客户端下载,系统通知、意见反馈、皮肤,会员中心***/
 
 /*1.用户头像*/
-.JS-user-level.level-0,
+.JS-user-level.level-0
+{display: none!important;}
 
 /*1.用户头像-悬浮*/
+.xtJbHcb .PvsOgyb
+{width:auto!important;}
+
 .vip-notice,
 .vip-privilege,
 
@@ -31,7 +35,7 @@ a.icon.icon-feedback.app-feedback.app-icon,
 /*4.会员中心*/
 a.KQcHyA,
 
-/***其它***/
+/***顶部-其它***/
 
 /***红点:***/
 
@@ -58,7 +62,17 @@ a.KQcHyA,
 	bottom: 10px !important;
 }
 
+/*****底部*****/
+#ft,
+
 /*****其它*****/
+
+
+/*手机下载*/
+a.g-button[data-button-id="b5"],
+/*举报*/
+a.g-button[data-button-id="b7"],
+
 #show-buyvip-pack {
 	display: none !important
 }
