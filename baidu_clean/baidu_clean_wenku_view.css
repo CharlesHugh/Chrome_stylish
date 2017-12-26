@@ -1,0 +1,115 @@
+/*
+名称:百度文库_文档页
+网站:https?://wenku.baidu.com/view/.*
+2017.12.26
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+
+/***顶部:百度文库搜索框上部***/
+
+/***顶部:百度文库搜索框***/
+
+/*文档分类:全部、doc、ppt...*/
+
+/***顶部:首页、分类、精品...个人中心***/
+
+/*****正文:上方悬浮搜索框,标题,正文内容,下方悬浮******/
+
+/*背景颜色*/
+
+/*{
+	background-color: #FFFFFF !important;
+}*/
+
+/*正文-边框处理*/
+.main {
+
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -10px 30px #BBB;	/*调整内外边距*/
+	margin: 0px !important;
+	padding-bottom: 0px;
+	padding: 10px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+/*正文-内容居中*/
+
+/*拉伸*/
+.main,
+.mod.doc-main,
+.center {
+	width: 100% !important;
+	background-color: #FFFFFF !important;
+	margin: auto;
+	padding: 0;
+}
+
+/*居中-正文*/
+.reader_ab_test.with-top-banner,
+.reader-container {
+	width: 100%;
+	margin: 0 auto !important;
+}
+
+/*居中-标题*/
+.reader_ab_test.with-top-banner,
+#doc-tittle-0 {
+	text-align: center;
+	margin: 0 auto !important;
+	padding: 10px;
+}
+
+/***正文:上方悬浮搜索框***/
+.fix-searchbar-wrap {
+	display: none !important;
+}
+
+/***正文:下方悬浮***/
+
+/*****正文右部:*****/
+
+/*****正文下部******/
+
+/***您的评论,用户评价***/
+#doc-comment.doc-comment,
+
+/***相关知识***/
+.mod.kgrec-container.pt20,
+
+/*****底部*****/
+.footer,
+
+/*****其它各种*****/
+
+/***各种悬浮***/
+
+/*底部右方悬浮:建议反馈*/
+
+/*广告插件提示*/
+
+/***各类烦人高亮:小红点,Hot***/
+#share-tips.fenxiang,
+
+/***各类诱导:VIP,手机App***/
+
+/***各种不用的功能***/
+
+/**分享**/
+.ico-share,
+.reder-share-model.bdshare_t.bds_tools_32.get-codes-bdshare,
+
+/**举报**/
+#docReport-0.report,
+
+/**上传**/
+.aside-wrap
+
+/**其它不用的组件**/ {
+	display: none !important;
+}

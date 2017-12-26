@@ -1,7 +1,7 @@
 /*
 名称:
 网站:
-2017.10.22
+2017.12.26
 水月仙森
 chiangchinming@gmail.com
 */
@@ -82,8 +82,17 @@ chiangchinming@gmail.com
 
 /*****底部各种*****/
 
+
 /*****其它*****/
 
 /*底部右方悬浮:建议反馈*/
 
 /*广告插件提示*/
+
+/*各类烦人高亮:小红点,Hot*/
+
+
+{
+	display: none !important;
+}
+
