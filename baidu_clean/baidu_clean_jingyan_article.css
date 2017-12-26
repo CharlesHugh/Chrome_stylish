@@ -1,139 +1,136 @@
 /*
-名称:百度经验-结果页
-网站:https://jingyan.baidu.com/article/.*
-2017.10.20
+名称:
+网站:
+2017.12.26
 水月仙森
 chiangchinming@gmail.com
 */
 
-/*****顶部:1.右上用户信息 2.搜索框,*****/
+/*****顶部*****/
 
-/***顶部-1.用户信息***/
-#usrbar.userbar,
+/***顶部:百度文库搜索框上部***/
+.wk-other-new-cntent,
+/***顶部:百度文库搜索框***/
+/*文档分类:全部、doc、ppt...*/
+.g-sl,
 
-/*顶部右方:我的经验,弹窗*/
-#msg-arrow,
-#exp-msgbox {
-    display: none !important;
+/***顶部:首页、分类、精品...个人中心***/
+.nav-wrap.mb10
+{display:none!important;}
+/*第一行:搜索框:居中*/
+/*{
+    margin: 20px 0 auto 12%;
+}*/
+
+/*搜索框下面的内容上移*/
+/*{
+    position: absolute;
+    top: 0px;
 }
+*/
 
-/***顶部-2.搜索框***/
+/*****正文:上方悬浮搜索框,标题,正文内容,下方悬浮******/
 
-/*搜索框居中*/
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+/*背景颜色*/
+/*{
+    background-color: #FFFFFF !important;
+}*/
 
-/*搜索框右侧:帮助*/
-.s-tools {
-    display: none !important;
-}
-
-/*第一行:悬浮搜索框*/
-#top-nav-bar.top-nav-bar {
-    display: none !important;
-}
-
-/*****正文上方:1.百度经验分类 2.条目分类信息*****/
-
-/***正文上方:1.百度经验分类***/
-.wgt-common-nav,
-
-/***正文上方:2.条目分类信息***/
-#breadcrumb.breadcrumb {
-    display: none;
-}
-
-/*****正文:经验条目******/
-
-/*****标题*****/
-
-/*标题-居中*/ 
-.exp-title.clearfix {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-/*标题下方-居中:来源,图片*/
-ul.exp-info,
-.wgt-thumbs.clearfix {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-/*标题右部:听语音:*/
-.audio-wp.audio-wp-1 {
-    display: none !important;
-}
 
 /*正文-边框处理*/
-#main-content {
+.main
+{
+
+    /*增加阴影*/
     -moz-box-shadow: 0px -10px 30px #BBB;
     -webkit-box-shadow: 0px -10px 30px #BBB;
-    box-shadow: 0px -1px 30px #BBB;/*增加阴影*/
+    box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
     margin: 0px !important;
     padding-bottom: 0px;
-    padding: 10px !important;/*调整内外边距*/
+    padding: 10px !important;/*圆角*/
     -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;/*圆角*/
+    -webkit-border-radius: 20px;
 }
 
 /*正文-内容居中*/
-#main-content {
+/*拉伸*/
+.main,
+.mod.doc-main,
+.center
+{
+    display:absolute!important;
     width: 100% !important;
     background-color: #FFFFFF !important;
-    margin-top: 20px !important;
+    margin: auto;
+    padding: 0;
+}
+/*居中-正文*/
+.reader_ab_test.with-top-banner,
+.reader-container
+{
+    width: 100%;
+  margin: 0 auto!important; 
+}
+/*居中-标题*/
+.reader_ab_test.with-top-banner,
+#doc-tittle-0
+{
+    text-align: center;
+  margin:0 auto!important;
+    padding: 10px;
+  
 }
 
-/*****正文下部:内容仅供参考,作者声明,投票有用我有疑问,相关经验,*****/
-
-/*正文下部:内容仅供参考*/
-.prompt,
-
-/*正文下部:作者声明*/
-.f12,
-origin-notice,
-
-/*正文下部:投票有用我有疑问*/
-#wgt-comments.wgt-comments,
-
-/*正文下部:相关经验,*/
-.main-content-bottom {
+/***正文:上方悬浮搜索框***/
+.fix-searchbar-wrap
+{
     display: none !important;
 }
+/***正文:下方悬浮***/
 
 /*****正文右部:*****/
 
-/*****底部各种*****/
+/*****正文下部******/
 
-/*底部:分享计划*/
-#aside,
+/***您的评论,用户评价***/
+#doc-comment.doc-comment,
+/***相关知识***/
+.mod.kgrec-container.pt20,
 
-/*底部:热门杂志*/
-.magzine-list,
-
-/*底部:版权信息*/
+/*****底部*****/
 .footer,
 
-/*****其它*****/
+/*****其它各种*****/
+/***各种悬浮***/
 
-/*底部左侧悬浮:是否有用*/
-#wgt-like {
+/*底部右方悬浮:建议反馈*/
+#activity-tg.reader-back2top-wrap,
+
+/*广告插件提示*/
+
+/***各类烦人高亮:小红点,Hot***/
+.num,
+span.ui-bz-hot-ic,
+#share-tips.fenxiang,
+
+/***各类诱导:VIP,手机App***/
+.qrHover,
+a#my-wkHome-vip-tips,
+.top-ads-banner,
+.main-nav.side-nav.clearfix a.wkmember-li-top,
+.vip-free-auto,
+
+/***各种不用的功能***/
+/**举报**/
+#docReport-0.report,
+
+/**上传**/
+.aside-wrap,
+/**其它不用**/
+#page-curmbs,
+p.doc-value,
+.high-quality-doc
+{
     display: none !important;
 }
 
-/*底部右侧悬浮:分享,收藏,返回顶部*/
-#wgt-exp-share {
-    display: none !important;
-    bottom: 100px !important;
-}
-
-/*新功能NEW*/
-i.new-icon {
-    display: none;
-}

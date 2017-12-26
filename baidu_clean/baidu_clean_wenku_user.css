@@ -1,0 +1,92 @@
+/*
+名称:百度文库_个人主页
+网站:https?://wenku.baidu.com/user/.*
+2017.12.26
+水月仙森
+chiangchinming@gmail.com
+*/
+
+/*****顶部*****/
+
+/***顶部:百度文库搜索框上部***/
+
+/***顶部:百度文库搜索框***/
+.box.top-search-box {
+	padding-bottom: 10px !important;
+}
+
+/*文档分类:全部、doc、ppt...*/
+
+/***顶部:首页、分类、精品...个人中心***/
+
+/*****正文:上方悬浮搜索框,标题,正文内容,下方悬浮******/
+
+/*背景颜色*/
+
+/*{
+	background-color: #FFFFFF !important;
+}*/
+
+/*正文-边框处理*/
+.bd-wrap {
+
+	/*增加阴影*/
+	-moz-box-shadow: 0px -10px 30px #BBB;
+	-webkit-box-shadow: 0px -10px 30px #BBB;
+	box-shadow: 0px -10px 30px #BBB;	/*调整内外边距*/
+	padding: 10px !important;/*圆角*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+/*正文-内容居中*/
+
+/*拉伸*/
+
+/*居中-正文*/
+
+/*居中-标题*/
+
+/***正文:上方悬浮搜索框***/
+
+/***正文:下方悬浮***/
+
+/*****正文右部:*****/
+
+/*****正文下部******/
+
+/***您的评论,用户评价***/
+
+/***相关知识***/
+
+/*****底部*****/
+
+/*****其它各种*****/
+
+/***各种悬浮***/
+
+/*底部右方悬浮:建议反馈*/
+.side-nav-bar,
+
+/*广告插件提示*/
+
+/***各类广告插页***/
+.approve-entr-warp,
+
+/***各类烦人高亮:小红点,Hot***/
+
+/***各类诱导:VIP,手机App***/
+#myvip,
+
+/***各种不用的功能***/
+
+/**分享**/
+
+/**举报**/
+
+/**上传**/
+.ui-bz-btn.log-xsend
+
+/**其它不用的组件**/ {
+	display: none !important;
+}

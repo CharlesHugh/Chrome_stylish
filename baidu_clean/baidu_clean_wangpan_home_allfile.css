@@ -3,7 +3,7 @@
 网站:https?://pan.baidu.com/disk/.*
 网站:https?://pan.baidu.com/mbox/.*
 网站:https?://pan.baidu.com/s/.*;
-2017.12.18
+2017.12.31
 水月仙森
 chiangchinming@gmail.com
 */
@@ -14,30 +14,66 @@ chiangchinming@gmail.com
 
 /***顶部-右侧:用户头像,客户端下载,系统通知、意见反馈、皮肤,会员中心***/
 
-/*1.用户头像*/
-.JS-user-level.level-0
-{display: none!important;}
+/**顶部-右侧 1.用户头像**/
+.JS-user-level.level-0 {
+	display: none !important;
+}
 
-/*1.用户头像-悬浮*/
-.xtJbHcb .PvsOgyb
-{width:auto!important;}
+/**顶部-右侧 1.用户头像-悬浮**/
+.xtJbHcb .PvsOgyb {
+	width: auto !important;
+}
 
 .vip-notice,
 .vip-privilege,
 
-/*2.客户端下载*/
+/**顶部-右侧 2.客户端下载**/
 .Ebdyswb,
 .app-download,
 
-/*3.2意见反馈*/
+/**顶部-右侧 3.2意见反馈**/
 a.icon.icon-feedback.app-feedback.app-icon,
 
-/*4.会员中心*/
+/**顶部-右侧 4.会员中心**/
 a.KQcHyA,
 
 /***顶部-其它***/
 
-/***红点:***/
+/*****左侧*****/
+
+/*左侧-底部:客户端下载*/
+.feNMdtb.global-clearfix,
+.feNMdtb.g-clearfix,
+
+/*左侧-底部:客户端下载上方-容量*/
+.GELdyA {
+	display: none !important;
+}
+
+/*左侧-底部:客户端下载上方-容量*/
+.QGOvsxb,
+.aside-absolute-container {
+	bottom: 10px !important;
+}
+
+/*****正文*****/
+
+/***正文-上侧-第一行:上传,新建文件夹,离线下载,我的设备***/
+
+/*4.我的设备*/
+.g-dropdown-button.ifqfvZBZ,
+
+/***正文-上侧-第二行:全部文件(路径),全部加载共N个***/
+.FcucHsb,
+
+/***正文***/
+
+/*****底部*****/
+#ft,
+
+/*****其它*****/
+
+/**红点:**/
 
 /*~/home*/
 .find-light-icon,
@@ -47,32 +83,19 @@ a.KQcHyA,
 .icon-new-msg,
 .icon-new-thing,
 
-/*****左侧*****/
+/**手机下载**/
+a.g-button[data-button-id="b5"],
 
-/*底部:客户端下载*/
-.feNMdtb.g-clearfix,
+/**举报**/
+a.g-button[data-button-id="b7"],
+#show-buyvip-pack,
 
-/*底部:客户端下载上方-容量*/
-.GELdyA {
+/**各种**/
+.coupon-banner-active.coupon-banner {
 	display: none !important;
 }
 
-/*底部:客户端下载上方-容量*/
-.aside-absolute-container {
-	bottom: 10px !important;
-}
-
-/*****底部*****/
-#ft,
-
-/*****其它*****/
-
-
-/*手机下载*/
-a.g-button[data-button-id="b5"],
-/*举报*/
-a.g-button[data-button-id="b7"],
-
-#show-buyvip-pack {
-	display: none !important
+/*屏蔽滚轮*/
+::-webkit-scrollbar {
+	display: none;
 }
