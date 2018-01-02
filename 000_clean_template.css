@@ -1,15 +1,19 @@
 /*
 名称:
-网站:
-2017.12.26
-水月仙森
-chiangchinming@gmail.com
+正则网站:
+域上网址:
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2017.12.31
 */
+.class {
+	color: red;
+	background: #fff;
+}
 
 /*****顶部*****/
 
-/*悬浮搜索框*/ 
-{
+/*悬浮搜索框*/ {
 	display: none !important;
 }
 
@@ -60,10 +64,10 @@ chiangchinming@gmail.com
 	/*增加阴影*/
 	-moz-box-shadow: 0px -10px 30px #BBB;
 	-webkit-box-shadow: 0px -10px 30px #BBB;
-	box-shadow: 0px -10px 30px #BBB;/*调整内外边距*/
-	margin: 0px !important;
+	box-shadow: 0px -1px 20px #BBB;/*调整内外边距*/
+	margin: 0 !important;
 	padding-bottom: 0px;
-	padding: 10px !important;/*圆角*/
+	padding: 20px !important;/*圆角*/
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 }
@@ -82,17 +86,12 @@ chiangchinming@gmail.com
 
 /*****底部各种*****/
 
-
 /*****其它*****/
 
 /*底部右方悬浮:建议反馈*/
 
 /*广告插件提示*/
 
-/*各类烦人高亮:小红点,Hot*/
-
-
-{
+/*各类烦人高亮:小红点,Hot*/ {
 	display: none !important;
 }
-
