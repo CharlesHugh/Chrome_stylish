@@ -4,7 +4,7 @@
 正则网站:https?://pan.baidu.com/mbox/.*
 正则网站:https?://pan.baidu.com/s/.*
 域上网址:pan.baidu.com
-最近更新时间:2017.1.2
+最近更新时间:2017.1.4
 作者:水月仙森
 联系方式:chiangchinming@gmail.com
 */
@@ -86,7 +86,8 @@ a.KQcHyA,
 
 /**手机下载**/
 a.g-button[data-button-id="b5"],
-
+/**客户端**/
+.mmn6eM7,
 /**举报**/
 a.g-button[data-button-id="b7"],
 #show-buyvip-pack,

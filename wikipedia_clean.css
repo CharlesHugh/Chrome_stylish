@@ -473,12 +473,11 @@ html[lang="de"] #bodyContent #coordinates
     font-family: 'Lora' !important;
     letter-spacing: -0.3px !important;
 }
-
 /*首行缩进*/
-#bodyContent p {
+#bodyContent p
+{
     text-indent: 2em;
 }
-
 /*词条内词语-已创建词条*/
 #bodyContent a:not(.new) {
     color: #004FD1 !important;

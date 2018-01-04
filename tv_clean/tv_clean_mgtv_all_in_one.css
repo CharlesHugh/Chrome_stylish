@@ -1,0 +1,100 @@
+/*
+名称:芒果tv-全局屏蔽
+1.全局
+域上网址:www.mgtv.com
+正则网站:^https?://(www.)?mgtv.com/[^/]*
+2.播放界面
+正则网站:^https?://www.mgtv.com/v/.*
+正则网站:^https?://www.mgtv.com/b/.*
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2018.1.4
+*/
+
+/**********1.全局屏蔽**********/
+
+/*顶部各种*/
+.m-headgg,
+
+/*底部各种*/
+.wp-main.morebg,
+.wp-main.made-main.gg-main.lazy-loaded,
+.c-footer.c-footer-lv1,
+.c-footer.c-footer-lv2,
+
+/*****其它*****/
+
+/*****各种悬浮*****/
+
+/*顶部悬浮搜索*/
+#honey-header.c-header-lv1.c-header-fix,
+
+/*左右悬浮*/
+.showbtn,
+.honey-feedback-floatbtn.clearfix,
+
+/***各类烦人高亮:小红点,Hot***/
+
+/***各类诱导:VIP,手机App***/
+
+/***各种不用的功能***/
+
+/*开通Vip*/
+.c-header-panel-mod#header-buyvip,
+
+/*详情*/
+.v-panel-info,
+
+/*下载*/
+.v-panel-down,
+#honey-header-download,
+/*手机观看*/
+.v-panel-passage,
+
+/**分享**/
+.v-panel-share,
+
+/**举报**/
+/**上传**/
+
+/*****其它*****/
+.play-content-box,
+
+/*看了还会看*/
+.play-content-primary,
+
+/*综艺热播榜*/
+.m-hotlist,
+
+/*相关明星*/
+.m-starlist,
+
+/*相关播单*/
+.m-playlist,
+
+/*评论*/
+.play-comment {
+    display: none !important;
+}
+
+/**********全局屏蔽**********/
+
+/**********2.播放界面**********/
+
+/*悬浮搜索框*/
+body {
+    padding: 0px;
+}
+
+.c-header.c-header-lv2 {
+    position: static;
+    z-index: 0;
+    width: 100%;
+}
+
+/*****调整*****/
+.play-content {
+    padding-bottom: 0px;
+}
+
+/**********播放界面**********/

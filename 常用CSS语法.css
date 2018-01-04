@@ -77,18 +77,18 @@
     16. X[foo~=”bar”]       指向那些以空格隔开多个值的属性的元素
     17. X:checked           匹配已经被选中的单选元素
     18. X:after
-    19. X:hover
+    19. X:hover             用户在某个元素上面悬停时
     20. X:not(selector)     selector以外的元素
-    21. X::pseudoElement
-    22. X:nth-child(n)
-    23. X:nth-last-child(n)
-    24. X:nth-of-type(n)
-    25. X:nth-last-of-type(n)
-    26. X:first-child
-    27. X:last-child
-    28. X:only-child
-    29. X:only-of-type
-    30. X:first-of-type
+    21. X::pseudoElement    使用伪元素（以::为表示）来定义元素的样式,如p::first-line,p::first-line
+    22. X:nth-child(n)          元素堆中选择元素
+    23. X:nth-last-child(n)     元素堆中选择元素:最后n个
+    24. X:nth-of-type(n)        无序列表中选择元素类型
+    25. X:nth-last-of-type(n)   无序列表中选择元素类型:最后n个
+    26. X:first-child           选择父节点的第一个子孩子
+    27. X:last-child            选择父节点的最后一个子节点
+    28. X:only-child            选择父节点的独生子（没别的孩子啦）的元素
+    29. X:only-of-type          选定在其父节点内没有兄弟节点的元素
+    30. X:first-of-type         选择该类型的第一个兄弟节点
 
 /*****鼠标划过显示:*****/
 .choosedclass {

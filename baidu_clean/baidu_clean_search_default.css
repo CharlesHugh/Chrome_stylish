@@ -4,20 +4,20 @@
 域上网址:
 作者:水月仙森
 联系方式:chiangchinming@gmail.com
-最近更新:2018.1.3
+最近更新:2018.1.4
 */
 
 /*固定(隐藏)顶部悬浮搜索框*/
 #head,
 #head.s_down {
-	position: static;
-	box-shadow: none !important;
-	-webkit-box-shadow: 0 !important;
+    position: static;
+    box-shadow: none !important;
+    -webkit-box-shadow: 0 !important;
 }
 
 /*****顶部:搜索框,用户信息,导航栏*****/
 #head {
-	border-bottom: none !important;
+    border-bottom: none !important;
 }
 
 /***顶部:1.搜索框***/
@@ -25,53 +25,17 @@
 /*搜索框:居中*/
 #head.s_down .head_wrapper .s_form,
 #head .head_wrapper .s_form {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
-/*
-.s_form {
-	position: relative;
-}*/
-.s_form_wrapper.soutu-env-mac.soutu-env-result {
-	width: 50%;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
-
-/*
-#result_logo,
-.bg.s_ipt_wr.quickdelete-wrap,
-.bg.s_btn_wr
-{
-  
-}
-*/
-
-/*
-#head,
-#head.s_down,
-#head .head_wrapper,
-.s_form,
-.s_form_wrapper.soutu-env-mac soutu-env-result
-{
-width:inherit!iportant;
-height:inherit!important;
-
-}
-*/
 
 /*搜索框-输入框:宽度*/
 
 /*.bg.s_ipt_wr.quickdelete-wrap {
-	width: 100% !important;
-	margin: 0 auto !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }*/
 
 /*搜索框-:右侧建议*/
@@ -87,27 +51,27 @@ a.toindex,
 /*搜索框-下方:为您推荐*/
 .headBlock,
 .hint_toprq_tips.f13.se_common_hint {
-	display: none !important;
+    display: none !important;
 }
 
 /***顶部:2.用户信息***/
 
 /*用户信息:鼠标滑动显示*/
 #u {
-	opacity: 1;
+    opacity: 1;
 }
 
 #u:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 /***顶部:3.导航栏***/
 .s_tab {
-	display: none;
+    display: none;
 }
 
 .head_nums_cont_outer.OP_LOG {
-	height: 12px;
+    height: 12px;
 }
 
 /*****正文上方*****/
@@ -117,174 +81,241 @@ a.toindex,
 
 /*留空?*/
 .leftBlock,
+.head_nums_cont_outer.OP_LOG,
 
 /*您可以仅查看*/
 .hit_top_new {
-	display: none !important;
+    display: none !important;
 }
 
-/*****正文:搜索结果数,搜索结果,相关搜索,页码数*****/
+/*****左侧正文:搜索结果数,搜索结果,相关搜索,页码数*****/
 
-/***正文:边框***/
-#content_left {
-
-	/*增加阴影*/
-	-moz-box-shadow: 0px -10px 30px #BBB;
-	-webkit-box-shadow: 0px -10px 30px #BBB;
-	box-shadow: 0px -1px 20px #BBB;/*调整内外边距*/
-	margin: 0 !important;
-	padding-bottom: 0px;
-	padding: 20px !important;/*圆角*/
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-}
-
-/***正文:页面拉伸***/
-#wrapper_wrapper_l {
-	width: 100%;
-}
-
-#wrapper_wrapper {
-	width: 100%;
-}
-
-.container {
-	width: 100%;
-}
-
+/***正文:排版***/
 .container_l {
-	width: 70%;
+    padding-top: 20px;
 }
 
-/*搜索结果*/
-.c-container {
-	width: 100% !important;
-}
+#content_left,
 
-/*正文:2.搜索结果*/
+/***正文:增加边框***/
 
-/*拉伸*/
+/*.wrapper_l,
+#wrapper_wrapper,
+.container_l,
+*/
 #content_left {
 
-	/*width: inherit !important;*/
-	width: 100% !important;
+    /*增加阴影*/
+    -moz-box-shadow: 0px -10px 30px #BBB;
+    -webkit-box-shadow: 0px -10px 30px #BBB;
+    box-shadow: 0px -1px 20px #BBB;/*调整内外边距*/
+    padding: 20px 20px 20px 20px;/*圆角*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 
 /***正文:内容居中***/
 
 /*正文*/
-#container.container_l,
+
+/*.container_l {
+}*/
+
+/*正文居中*/
+.container_l {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+/***正文:页面拉伸***/
+#wrapper_wrapper_l {
+    width: 100%;
+}
+
+/*左侧搜索结果拉伸*/
+#content_left {
+    width: 80% !important;
+    margin-left: 10% !important;    /*width: inherit !important;*/
+}
+
+/*.c-container*/
+
+/*1.百度百科,百度贴吧*/
+
+/*.result-op.c-container.xpath-log*/
+
+/*2.非百度百科,百度贴吧*/
+
+/*.result.c-container {
+}*/
+
+/***正文:搜索结果-网站信息:拉伸***/
+
+/*
+.c-abstract,
+.c-span18.c-span-last {
+  width:inherit;
+}
+*/
+
+/***正文:去除多余间隔及居中***/
 
 /*正文条目-百度系:贴吧,百科,翻译*/
 #content_left .result-op.c-container,
 
 /*正文条目-非百度系*/
-#content_left .result.c-container,
+#content_left .result.c-container {
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
 
 /*相关搜索*/
 #rs {
-	margin: 0 auto !important;
+    margin: 0 auto !important;
 }
+
+/***正文:0.全文调节***/
+
+/**链接颜色**/
+
+/*百度贴吧-搜索结果*/
+.op-tieba-general-right,
+.op-tieba-general-linktxt,
+.op-tieba-offical-p a,
+.op-tieba-offical-table.op-tieba-offical-tabmar a,
+
+/*百度百科-搜索结果*/
+.c-gap-right-small.op-se-listen-recommend,
+.op-se-listen-recommend,
+
+/*百度视频-搜索结果*/
+.c-span6 a,
+
+/*XX最新相关消息*/
+.c-offset a {
+    color: #000;
+}
+
+/**网址下划线**/
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+/**网站中的匹配搜索词配置:红色高亮 下划线**/
+a em {
+    color: inherit;
+    text-decoration: none;
+}
+
+/**搜索结果-左侧网站图标**/
+.favurl {
+    padding-left: unset;
+    background-image: none !important;
+}
+
+/**搜索结果-正文内容:左侧图片**/
+
+/*百度百科+百度经验*/
+
+/*.c-img.c-img6,*/
+
+/*百度贴吧*/
+
+/*.op-tieba-general-mainpic,*/
+
+/*a.st_com_abstract.c-span6,*/
+
+/*其它图片*/
+
+/*.general_image_pic.c-span6 {
+display: none !important;
+}*/
 
 /***正文:1.搜索结果数***/
 
 /*搜索结果数:居中*/
 .nums {
-	margin: 0 !important;
-	width: 100%;
-	text-align: center;
+    margin: 0 !important;
+    width: 100%;
+    text-align: center;
 }
-
-.nums,
 
 /*搜索结果数-右侧:搜索工具*/
-.nums .search_tool {
-	display: none !important;
-}
+.nums,
+.nums .search_tool,
 
 /***正文:2.搜索结果:网站名称,正文,链接***/
 
-/*内容拉伸*/
-.c-span18.c-span-last {
-	width: inherit;
-	overflow: auto !important;
+/***搜索结果-正文:***/
+
+/**搜索结果-正文-XX最新相关消息*/
+.c-offset {
+    padding-left: 0px;
 }
 
-/*网址下划线*/
-a:-webkit-any-link {
-	text-decoration: none;
+/**搜索结果-正文-百度百科*/
+p.op-bk-polysemy-move.op-bk-polysemy-bold,
+
+/**搜索结果-百度视频*/
+
+.c-row + .c-gap-top-small {
+    display: none !important;
 }
 
-/*搜索结果-网站名称:红色高亮搜索词*/
-a em {
-	color: inherit;
-	text-decoration: none;
-}
-
-/**搜索结果-正文:左侧图片**/
-
-/*百度百科+百度经验*/
-.c-span6,
-.c-img.c-img6,
-
-/*图片:百度贴吧*/
-.op-tieba-general-mainpic,
-a.st_com_abstract.c-span6,
-
-/*其它图片*/
-.general_image_pic.c-span6 {
-	display: none;
-}
-
-/**搜索结果-正文:**/
-
-/*搜索结果-正文-百度百科*/
-
-/*链接颜色*/
-.c-gap-right-small.op-se-listen-recommend,
-.op-se-listen-recommend {
-	color: #000;
-}
-
-/*搜索结果-百度贴吧*/
-
-/*链接颜色*/
-.op-tieba-general-right,
-.op-tieba-general-linktxt {
-	color: #000 !important;
-}
+/**搜索结果-百度贴吧*/
 
 /*方框*/
-table.op-tieba-general-maintable {
-	margin: 9px 9px 9px 0px !important;
-	border: 1px solid #e3e3e3;
-	border-bottom-color: #e0e0e0;
-	border-right-color: #ececec;
-	box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
-	-webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
+
+/*table.op-tieba-general-maintable {
+margin: 0px !important;
+border: 1px solid #e3e3e3;
+border-bottom-color: #e0e0e0;
+border-right-color: #ececec;
+box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
+-webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, .072);
+
+}
+*/
+.op-tieba-general-firsttd.op-tieba-general-mainpl {
+    padding-left: 0px;
 }
 
 /*方框与内容的边距*/
-td.op-tieba-general-firsttd {
-	padding: 9px;
-}
+
+/*td.op-tieba-general-firsttd {
+}*/
 
 /*内边距*/
-td.op-tieba-general-firsttd.op-tieba-general-mainpl {
-	padding-top: 0 !important;
-	padding-bottom: 0px !important;
-}
 
-/*查看更多XX贴吧-*/
-.op-tieba-general-lookmore.op-tieba-general-mainpl {
-	display: none;
+/*td.op-tieba-general-firsttd.op-tieba-general-mainpl {
+padding-top: 0 !important;
+padding-bottom: 0px !important;
+}*/
+
+/*查看更多XX贴吧的内容*/
+.op-tieba-offical-lookmore,
+
+/*.op-tieba-general-right,
+.c-gray,*/
+
+/**搜索结果-ZOL中关村*/
+.op_dq01_table,
+.op_dq01_morelink.c-gap-top-small {
+    display: none;
 }
 
 /**搜索结果-链接**/
 
 /*.c-showurl,*/
 
+/*百度贴吧链接*/
+.c-showurl.op-tieba-general-mainpl {
+    padding: 0px !important;
+}
+
 /**搜索结果-链接-右侧:**/
+
+/*.f13*/
 
 /*百度开放平台*/
 .op_LAMP,
@@ -293,7 +324,8 @@ td.op-tieba-general-firsttd.op-tieba-general-mainpl {
 .c-icon.c-icon-v,
 
 /*百度快照,百度口碑*/
-.m,
+
+/*.m,*/
 
 /*百度口碑-评价*/
 .c-pingjia,
@@ -301,11 +333,11 @@ td.op-tieba-general-firsttd.op-tieba-general-mainpl {
 /*其它*/
 .c-icons-outer,
 .c-tools {
-	display: none !important;
+    display: none !important;
 }
 
 .c-index-hot.c-index.c-gap-icon-right-small {
-	background-color: #8eb9f5;
+    background-color: #8eb9f5;
 }
 
 /*****正文右部*****/
@@ -322,21 +354,29 @@ td.op-tieba-general-firsttd.op-tieba-general-mainpl {
 
 /*页码页-上方小脚印*/
 span.fk {
-	display: none !important;
+    display: none !important;
 }
 
-/*页码页居中*/
+/*页码页:居中*/
 #page {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*页码页:位置调整*/
+#page {
+    width: 80%;
+    margin-left: 10% !important;
+    margin: 20px 0 20px 0;
+    padding: 0;
 }
 
 /*页码页调整,使对齐*/
 #page a,
 #page strong {
-	height: 100%;
+    height: 100%;
 }
 
 /*底端-百度企业信息*/
@@ -344,12 +384,18 @@ span.fk {
 
 /*****其它*****/
 
+/***各种***/
+.op_exactqa_answer_order.c-gap-top-small,
+.op-hotboard-hotnews-body + .c-gap-top-small {
+    display: none !important;
+}
+
 /*悬浮搜索框-悬浮推荐*/
 .c-tip-con {
-	display: none !important;
+    display: none !important;
 }
 
 /*屏蔽滚轮*/
 ::-webkit-scrollbar {
-	display: none;
+    display: none;
 }

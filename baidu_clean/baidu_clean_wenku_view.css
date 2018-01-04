@@ -1,9 +1,10 @@
 /*
 名称:百度文库_文档页
-网站:https?://wenku.baidu.com/view/.*
-2017.12.26
-水月仙森
-chiangchinming@gmail.com
+正则网站:https?://wenku.baidu.com/view/.*
+域上网址:
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2018.1.4
 */
 
 /*****顶部*****/
@@ -59,6 +60,7 @@ chiangchinming@gmail.com
 
 /*居中-标题*/
 .reader_ab_test.with-top-banner,
+.owner-desc-wrap,
 #doc-tittle-0 {
 	text-align: center;
 	margin: 0 auto !important;

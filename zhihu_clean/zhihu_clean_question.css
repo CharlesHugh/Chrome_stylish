@@ -1,9 +1,10 @@
 /*
-知乎-回答页
-https?://www.zhihu.com/question/.*
-2017.10.23
-水月仙森
-chiangchinming@gmail.com
+名称:知乎-回答页
+正则网站:https?://www.zhihu.com/question/.*
+域上网址:
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2018.1.4
 */
 
 /*顶部悬浮*/
@@ -150,8 +151,11 @@ body {
 
 /*****其它*****/
 
-/*底部右方悬浮:建议反馈*/
+/*底部右侧悬浮:建议反馈*/
 .CornerButtons,
+
+/*底部左侧悬浮:刘看山*/
+.KanshanDiversion,
 
 /*广告插件提示*/
 .AdblockBanner {
