@@ -1,0 +1,95 @@
+/*
+名称:百度贴吧-第一页
+正则网站:^https?://(tieba.baidu.com|www.tieba.com)((/+f\?.*)|(/[0-9a-zA-Z_\%]+([\?#]+.*)*))$
+域上网址:
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2018.1.2
+*/
+
+/*****全文*****/
+
+/*背景颜色*/
+
+.wrap1,
+#head {
+
+  /*background: #dceffe!important;*/
+  background: #fff !important;
+}
+
+/*****顶部:顶栏,搜索框,贴吧背景,贴吧头部,贴吧分类*****/
+
+/***顶部:3.贴吧背景***/
+
+.card_banner.card_banner_link {
+  display: none;
+}
+
+/***顶部:4.贴吧头部***/
+
+/*左侧-头像:调整*/
+
+/*.card_head_img {
+height: unset !important;
+width:unset !important;
+}
+
+*/
+
+.card_top_theme .card_head,
+.card_top_theme .card_head_img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  bottom: 0px;
+}
+
+.card_top.clearfix {
+  padding-left: 100px
+}
+
+/*****贴吧内容:左侧贴吧内容,右侧其它*****/
+
+/***贴吧内容:1.左侧贴吧内容***/
+
+/*贴吧楼主-右方-标志*/
+
+.icon_wrap.icon_wrap_theme1.frs_bright_icons {
+  display: none !important
+}
+
+/*去除背景和底部分隔线*/
+.forum_content {
+  background: #fff;
+}
+
+/*去除边框,底部分隔线*/
+.wrap2 {
+  padding-bottom: 0px;
+}
+
+/*居中调整*/
+#content_wrap.main {
+  width: 100%;
+  margin: auto;
+}
+
+/*增加贴子内容简介宽度*/
+.threadlist_abs_onlyline {
+  width: 160% !important;
+}
+
+/***贴吧内容:2.右侧其它***/
+
+/*贴吧热议、其他所有*/
+
+#aside.aside,
+
+/*****底部:发表新帖,页底*****/
+
+div[id="pagelet_frs-list/pagelet/thread_footer"] {
+  display: none !important;
+}
+
+/*****悬浮*****/

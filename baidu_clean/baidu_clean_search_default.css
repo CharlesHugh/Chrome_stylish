@@ -1,24 +1,19 @@
 /*
 名称:百度搜索_搜索页
-网站:^https?://www.baidu.com/s\?.*
-2017.11.26
-水月仙森
-chiangchinming@gmail.com
+正则网站:^https?://www.baidu.com/s\?.*
+域上网址:
+作者:水月仙森
+联系方式:chiangchinming@gmail.com
+最近更新:2018.1.3
 */
 
 /*固定(隐藏)顶部悬浮搜索框*/
-#head {
+#head,
+#head.s_down {
 	position: static;
+	box-shadow: none !important;
+	-webkit-box-shadow: 0 !important;
 }
-
-/*
-#head.s_down,
-.s_form
-{
-  box-shadow:0!important;
-  -webkit-box-shadow: 0!important;
-}
-*/
 
 /*****顶部:搜索框,用户信息,导航栏*****/
 #head {
@@ -28,8 +23,6 @@ chiangchinming@gmail.com
 /***顶部:1.搜索框***/
 
 /*搜索框:居中*/
-
-/*
 #head.s_down .head_wrapper .s_form,
 #head .head_wrapper .s_form {
 	display: flex;
@@ -37,11 +30,11 @@ chiangchinming@gmail.com
 	justify-content: center;
 	align-items: center;
 }
-*/
+
+/*
 .s_form {
 	position: relative;
-}
-
+}*/
 .s_form_wrapper.soutu-env-mac.soutu-env-result {
 	width: 50%;
 	position: absolute;
@@ -75,10 +68,14 @@ height:inherit!important;
 */
 
 /*搜索框-输入框:宽度*/
-.bg.s_ipt_wr.quickdelete-wrap {
-	width: 40% !important;
+
+/*.bg.s_ipt_wr.quickdelete-wrap {
+	width: 100% !important;
 	margin: 0 auto !important;
-}
+}*/
+
+/*搜索框-:右侧建议*/
+.s_ipt_tip,
 
 /*搜索框-输入框右侧:语音,照相*/
 span.ipt_rec,
@@ -168,7 +165,9 @@ a.toindex,
 
 /*拉伸*/
 #content_left {
-	width: inherit !important;
+
+	/*width: inherit !important;*/
+	width: 100% !important;
 }
 
 /***正文:内容居中***/
